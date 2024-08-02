@@ -1,0 +1,11 @@
+kategoria,liike,suoritusvaatimus,tick
+4,perushyppy välihypyllä,20 putkeen,1
+,perushyppy ilman välihyppyä,20 putkeen,1
+,yhdellä jalalla ilman välihyppyä,8 putkeen,1 1
+3,vuoroaskel,4 putkeen,2
+,laskettelu,4 putkeen,1
+,kello,*4,1
+,haarahyppy,*4,1
+6,sving,*4,2
+,varvaspysäytys,*3,2
+,ruohonleikkuri,*3,1 1

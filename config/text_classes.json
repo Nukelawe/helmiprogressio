@@ -1,0 +1,61 @@
+{
+	"default": {
+		"font-family": "Bai Jamjuree",
+		"font-size": 5,
+		"font-weight": "normal",
+		"font-style": "normal",
+		"fill": "black"
+	},
+	"title_circle": {
+		"font-family": "Source Code Pro",
+		"font-size": 35,
+		"font-weight": "bold",
+		"fill": "white"
+	},
+	"title_banner": {
+		"font-size": 16,
+		"font-weight": "bold",
+		"fill": "white"
+	},
+	"name_line": {
+		"font-size": 6
+	},
+	"table_header": {
+		"font-size": 6,
+		"font-weight": "bold"
+	},
+	"table_row": {},
+	"tick_box": {
+		"font-weight": "bold",
+		"font-family": "Source Code Pro",
+		"fill": "#999999"
+	},
+	"point_requirement": {
+		"font-weight": "bold",
+		"font-family": "Source Code Pro",
+		"fill": "#999999"
+	},
+	"beat_label": {
+		"font-size": 4,
+		"font-weight": "bold",
+		"font-family": "Source Code Pro",
+		"fill": "white"
+	},
+	"description_1": {
+		"font-size": 2.5,
+		"font-style": "italic"
+	},
+	"description_0": {
+		"font-size": 3
+	},
+	"combo_title": {
+		"font-size": 6,
+		"font-weight": "bold"
+	},
+	"combo_start": {
+		"font-size": 5
+	},
+	"combo_stop": {
+		"font-size": 3
+	}
+}

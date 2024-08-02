@@ -1,0 +1,17 @@
+kategoria,liike,suoritusvaatimus,tick
+6,perushyppy takaperin välihypyllä,20 putkeen,1
+,perushyppy takaperin ilman välihyppyä,20 putkeen,1
+,yhdellä jalalla takaperin ilman välihyppyä,8 putkeen,1 1
+12,hiihtohyppy,*4,1 1
+,saksihyppy,4 putkeen,2
+,ankka,8 putkeen,2
+,potku eteen,*4,1 1
+,potku taakse,*4,1 1
+,boxer step,16 hyppyä,2
+12,sving -> sving,*3,1 1
+,risti,*3,1 1
+,suunnan vaihto taakse,*5,2
+,suunnan vaihto eteen,*5,2
+,puolikäännös taakse,*3,1 1
+,puolikäännös eteen,*3,1 1
+1,valepunnerrus,*3,1

@@ -1,0 +1,19 @@
+kategoria	liike	suoritusvaatimus	symmetrinen
+	perushyppy takaperin	20 putkeen välihypyllä	TRUE
+		20 putkeen ilman välihyppyä	TRUE
+	yhdellä jalalla takaperin	8 putkeen ilman välihyppyä	FALSE
+jalkatyö	haarahyppy	(haara, perus) *4	TRUE
+jalkatyö	hiihtohyppy	(hiihto, perus) *4	FALSE
+jalkatyö	laskettelu	(oikea, vasen) *4	TRUE
+jalkatyö	kello	(eteen, taakse) *4	TRUE
+jalkatyö	polven nosto	(polvi ylös, perus) *4	FALSE
+jalkatyö	potkut eteen	(potku, perus) *4	FALSE
+jalkatyö	potkut taakse	(potku, perus) *4	FALSE
+jalkatyö	boxer step		TRUE
+käsittely	sving	(sving, sving, perus) *4	FALSE
+käsittely	risti	(risti, perus) *3	FALSE
+käsittely	suunnan muutos etuperin -> takaperin	*5	TRUE
+käsittely	suunnan muutos takaperin -> etuperin	*5	TRUE
+käsittely	puolikäännös etuperin -> takaperin	*3	FALSE
+käsittely	puolikäännös takaperin -> etuperin	*3	FALSE
+akro	valepunnerrus	*3	TRUE

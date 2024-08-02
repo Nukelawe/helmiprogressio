@@ -1,0 +1,23 @@
+taso	nimi	1.1	1.2	1.3	1.4	1.5	1.6	1.7	1.8	2.1	2.2	2.3	2.4	2.5	2.6	2.7	2.8	3.1	3.2	3.3	3.4	3.4	3.6	3.7	3.8	4.1	4.2	4.3	4.4	4.5	4.6	4.7	4.8	5.1
+1	Neliö – hyppimistä eri suuntiin	o	o	o	o	o	o	o	o	o	o	o	o	o	o	o	o	varvas- pysäytys																
+1		vasemmalle	oikealle	vasemmalle	oikealle	vasemmalle	vasemmalle	vasemmalle	vasemmalle	taakse	eteen	taakse	eteen	taakse	taakse	taakse	taakse																	
+1	Neliö toiseen suuntaan	o	o	o	o	o	o	o	o	o	o	o	o	o	o	o	o	loppu																
+1		oikealle	vasemmalle	oikealle	vasemmalle	oikealle	oikealle	oikealle	oikealle	eteen	taakse	eteen	taakse	eteen	eteen	eteen	eteen																	
+1	Välihyppysvingi	o		o		o		o		sving (O)		.		sving (V)		.		loppu																
+1																																		
+2	yhdellä jalalla hyppiminen -> vuoroaskel	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	loppu																
+2		oik. jalalla	oik. jalalla	oik. jalalla	oik. jalalla	vas. jalalla	vas. jalalla	vas. jalalla	vas. jalalla	oik. jalalla	oik. jalalla	oik. jalalla	vas. jalalla	oik. jalalla	vas. jalalla	oik. jalalla	vas. jalalla																	
+2	Haarat ja potkut	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	loppu																
+2		haara	perus	hiihto (O)	perus	haaara	perus	hiihto (V)	perus	polven nosto (O)	perus	potku eteen (O)	perus	polven nosto (V)	perus	potku eteen (V)	perus																	
+2	Popcorn – Crazy Frog	perus		perus		perus		suunnan vaihto taakse		_(perus)		_(perus)		_(perus)		naru maahan		valepunnerrus						.		loppu								
+2		.	.	.	.	.	.	haara		.						haara		kyykky		punnerrus		kyykky		.										
+3	Auto jää – Antti Tuisku	.	.	.		.	.	.		.		texasilainen kokokäännös (O)		.		.		.	.	.	.	.	.	.		.	.	sving (V)	risti	sving (O)	.	tupla	.	loppu
+3				askel sivuun (O)		.		askel sivuun (V)		.		kävely eteenpäin				.		haara	.	haara	jalat ristiin	haara	.											
+3	Syncopated Clock – Leroy Anderson	.	.	.	.	.	.	.		.	.	.	.	risti		.	sving	.	.	.	.	.	.	.		.	.	kokokäännös (O)	.	sving (O)	rannewrap (O)	rannewrap\n purku (V)	sving (V)	loppu
+3		twist (V)	.	twist(O)	.	potku sivulle (O)	potku sivulle (V)	potku sivulle (O)		kanta eteen (O)	varvas taakse (O)	kanta eteen (O)	varvas taakse (O)	.				ankka (ulkokierto)	ankka (sisäkierto)	ankka (ulkokierto)	ankka (sisäkierto)	potku sivulle (V)	potku sivulle (O)	potku sivulle (V)		.								
+4	Get Ready For This - 2 Unlimited	.	.	sving (V)	EB-sving (O)	.	.	toad (V)	.	.	.	risti (V)	risti (O)	.	marlee kokokäännös	.	.	.	.	sving (V)	KN-sving (O)	.	.	toad (O)	.	.	.	risti (O)	risti (V)	toad (V)	caboose	.	.	loppu
+4																																		
+4	jotain takaperin	.								loppu																								
+4																																		
+5	Joku tuplasarja	.	.	.	.	auki-auki\n tupla	auki-risti\n tupla	risti-auki\n tupla	risti-risti\n tupla	sving-_auki\n tupla	_auki-_auki\n tupla	.	.	loppu																				
+5		.																																

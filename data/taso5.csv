@@ -1,0 +1,18 @@
+kategoria,liike,suoritusvaatimus,tick
+3,vuoroaskel (speed step),30 sekunnissa 50,1
+,auki-auki tupla,10 putkeen,1
+,auki-auki tupla (takaperin),*3,1
+7,auki-risti tupla,*3,2
+,risti-auki tupla,*3,2
+,risti-risti tupla,*3,2
+,kokokäännös tupla (full twist),*3,1 1
+9,TS,*3,1 1
+,AS,*3,1 1
+,EB takaperin,*3,1 1
+,awesome annie,*3,1 1
+,inverse toad,*3,1 1
+,elefantti (takaperin),*3,1 1
+6,käärmeirrotus,*3,1 1
+,peppuhyppy,*3,1 1
+,risti-risti floater,*3,1 1
+,TS-sving -> TS-sving (takaperin),6 putkeen,2

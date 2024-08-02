@@ -1,0 +1,41 @@
+{
+	"width": 210,
+	"height": 297,
+	"margin_left": 15,
+	"margin_right": 15,
+	"margin_top": 15,
+	"margin_bottom": 15,
+	"logo_height": 15,
+
+    "tick_box_size": 5,
+    "tick_box_roundness": 1.5,
+    "tick_box_border_thickness": 1,
+
+	"title_banner_roundness": 3,
+
+	"title_circle_radius": 18,
+
+	"name_line_length": 50,
+	"name_line_thickness": 0.5,
+
+    "table_row_height": 9,
+	"table_col1": 2,
+	"table_col2": 120,
+	"table_margin_right": 5,
+    "table_roundness": 3,
+    "table_border_thickness": 1,
+
+	"combo_gap": 20,
+	"combo_row_gap": 3,
+
+	"combo_border_thickness": 1,
+	"combo_beat_radius_x": 2.2,
+	"combo_beat_radius_y": 2.7,
+
+	"combo_row_height": 20,
+	"combo_box_width": 20,
+	"combo_box_tip": 3,
+	"combo_start_width": 7,
+	"combo_stop_width": 20
+}
+

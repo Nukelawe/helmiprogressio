@@ -1,0 +1,74 @@
+<defs>
+	<!-- Table walls -->
+	<rect id="table_boundary" rx="{{table_roundness}}" ry="{{table_roundness}}"
+		fill="none" stroke-width="{{ table_border_thickness }}" stroke="{{ colors.border }}"
+		width="{{ table_width }}" height="{{ table_height }}"/>
+	<clipPath id="table_clip"><use href="#table_boundary"/></clipPath>
+
+	<!-- Background color 1 -->
+	<rect id="table_row_background"
+		width="{{ table_width }}"
+		height="{{ table_row_height }}"/>
+</defs>
+
+<g clip-path="url(#table_clip)">
+	<use href="#table_row_background" style="fill: white"/>
+	<g transform="translate(0,
+		{{ (table_row_height + styles.table_header.cap_height) / 2 }})">
+		{{ text_element(table_header[0], x = table_col1) }}
+		{{ text_element(table_header[1], x = table_col2) }}
+	</g>
+
+	{% set ns = namespace(y=0, fill_color="white") %}
+	{% for skill in skills %}
+		<g transform="translate(0, {{ loop.index * table_row_height }})">
+			<!-- Background -->
+			{% if loop.index is even %}
+				<use href="#table_row_background" style="fill: {{ colors.bg1 }}"/>
+			{% else %}
+				<use href="#table_row_background" style="fill: {{ colors.bg2 }}"/>
+			{% endif %}
+
+			<!-- Text -->
+			<g transform="translate(0,
+				{{ (table_row_height + styles.table_row.cap_height) / 2 }})">
+				{{ text_element(skill.liike, x=table_col1) }}
+				{{ text_element(skill.suoritusvaatimus, x=table_col2) }}
+			</g>
+
+			<!-- Tick boxes -->
+			{% macro place_tick_box(x, e) %}
+				<use id="table_tick_box" href="#tick_box" x="{{ x }}"
+					y="{{ (table_row_height - tick_box_size) / 2 }}"/>
+				{{ text_element(e,
+					x = x + (tick_box_size - e.width) / 2 - e.x_bearing,
+					y = (table_row_height + e.height) / 2) }}
+			{% endmacro %}
+
+			{% if skill.tick_boxes | length == 1 %}
+				{{ place_tick_box(tick_box_x, skill.tick_boxes[0]) }}
+			{% else %}
+				{{ place_tick_box(tick_box_x1, skill.tick_boxes[0]) }}
+				{{ place_tick_box(tick_box_x2, skill.tick_boxes[1]) }}
+			{% endif %}
+		</g>
+	{% endfor %}
+</g>
+
+{% for group in skill_groups %}
+	<g transform="translate(0,
+		{{ (group.start_index + 1)* table_row_height }})">
+		<line id="table_group_divider"
+			x1="0" x2="{{ table_width }}" y1="0" y2="0"
+			stroke="{{ colors.border }}"
+			stroke-width="{{ table_border_thickness }}"/>
+		{% set x = table_width %}
+		{% set y = group.size / 2 * table_row_height %}
+		<g transform="rotate(90, {{ x }}, {{ y }})">
+			{{ text_element(group.text,
+				x = x - group.text.width / 2 , y = y - table_col1) }}
+		</g>
+	</g>
+{% endfor %}
+
+<use href="#table_boundary"/>
