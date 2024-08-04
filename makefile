@@ -5,8 +5,9 @@ pdfs      = $(svgs:.svg=.pdf)
 templates = templates/base.svg.jinja templates/skill_table.svg.jinja templates/skills.svg.jinja templates/combos.svg.jinja
 
 # Default target
-output/helmiprogressio.pdf: $(pdfs) | output
-	pdfunite $(pdfs) $@
+output/helmiprogressio.pdf: set_metadata.sh $(pdfs) | output
+	pdfunite $(pdfs) output/helmiprogressio_nometa.pdf
+	./$<
 
 # Target to generate SVG
 output/taso%-0.svg output/taso%-1.svg: generate_svg.py combo.py text_handling.py \
