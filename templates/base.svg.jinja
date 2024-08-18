@@ -33,15 +33,50 @@
 		"font-weight",
 		"font-style",
 		"fill"] %}
-	{% macro text_element(elem, x=0, y=0) %}
-		{% if elem.text is not equalto("") %}
-			<text x="{{ x }}" y="{{ y }}"
-				{% for p in text_style_properties %}
-					{{ p }}="{{ styles[elem.style][p] }}"
-				{% endfor %}>
-				{{ elem.text }}
-			</text>
+	{% macro text_element(elem, x=0, y=0, x_align="left", y_align="top") %}
+		{% set fn = namespace(y_advance=0, x_advance=0, elem_height=0) %}
+		{% set elem_height = styles[elem.style].x_height * elem.lines|length %}
+		{% if elem.lines|length > 1 %}
+			{% set elem_height = styles[elem.style].x_height * elem.lines|length
+				+ styles[elem.style].line_spacing * (elem.lines|length - 1) %}
 		{% endif %}
+
+		{% if y_align == "middle" %}
+			{% set y = y - elem_height / 2 + styles[elem.style].x_height %}
+		{% elif y_align == "bottom" %}
+			{% set y = y - elem_height + styles[elem.style].x_height %}
+		{% endif %}
+		{% for line in elem.lines %}
+			{% set fn.x_advance = 0 %}
+			{% set x_line = x %}
+			{% if x_align == "center" %}
+				{% set x_line = x - line.width / 2 %}
+			{% elif x_align == "right" %}
+				{% set x_line = x - line.width %}
+			{% endif %}
+			{% for word in line.words %}
+				{% if word.text is not equalto("") %}
+					<text x="{{ x_line + fn.x_advance }}" y="{{ y + fn.y_advance }}"
+						{% for p in text_style_properties %}
+							{{ p }}="{{ styles[word.style][p] }}"
+						{% endfor %}
+						xml:space="preserve">{{ word.text }}
+					</text>
+				{% endif %}
+				{% if word.overline %}
+					{% set overline_thickness = styles[word.style]["font-size"] * 0.1 %}
+					{% set y_overline = fn.y_advance - styles[word.style].cap_height - overline_thickness %}
+					<line x1="{{ x_line + fn.x_advance }}" x2="{{ x_line + fn.x_advance + word.width }}"
+						y1="{{ y + y_overline }}"
+						y2="{{ y + y_overline }}"
+						stroke="black"
+						stroke-width="{{ overline_thickness }}"
+						stroke-linecap="round"/>
+				{% endif %}
+				{% set fn.x_advance = fn.x_advance + word.x_advance %}
+			{% endfor %}
+			{% set fn.y_advance = fn.y_advance + styles[elem.style].x_height + styles[elem.style].line_spacing %}
+		{% endfor %}
 	{% endmacro %}
 
     <g id="body" transform="translate({{ margin_left }}, {{ margin_top }})">
@@ -49,24 +84,26 @@
 		{% block body %}{% endblock %}
     </g>
 
-	{% set logo_aspect_ratio = 4.2199063641816785 %}
-	{% set logo_width = logo_height * logo_aspect_ratio %}
+	{% block logo %}
+		{% set logo_aspect_ratio = 4.2199063641816785 %}
+		{% set logo_width = logo_height * logo_aspect_ratio %}
 
-	{% set logo_y = height - margin_bottom * 2 %}
-	<image href="data:image/svg+xml;base64,{{ logo }}"
-		x="{{ (width - logo_width) / 2 }}"
-		y="{{ height - margin_bottom - logo_height }}"
-		width="{{ logo_width }}"
-		height="{{ logo_height }}"/>
-
-	<g style="display: none">
-		<rect id="logo_bounding_box" fill="none" stroke="black" stroke-width="0.2"
-			x="{{ (width - logo_width) / 2 }}" y="{{ height - margin_bottom - logo_height }}"
+		{% set logo_y = height - margin_bottom * 2 %}
+		<image href="data:image/svg+xml;base64,{{ logo }}"
+			x="{{ (width - logo_width) / 2 }}"
+			y="{{ height - margin_bottom - logo_height }}"
 			width="{{ logo_width }}"
 			height="{{ logo_height }}"/>
-		<rect id="margins" fill="none" stroke="black" stroke-width="0.2"
-			x="{{ margin_left }}" y="{{ margin_top }}"
-			width="{{ width - margin_left - margin_right }}"
-			height="{{ height - margin_top - margin_bottom }}"/>
-	</g>
+
+		<g style="display: none">
+			<rect id="logo_bounding_box" fill="none" stroke="black" stroke-width="0.2"
+				x="{{ (width - logo_width) / 2 }}" y="{{ height - margin_bottom - logo_height }}"
+				width="{{ logo_width }}"
+				height="{{ logo_height }}"/>
+			<rect id="margins" fill="none" stroke="black" stroke-width="0.2"
+				x="{{ margin_left }}" y="{{ margin_top }}"
+				width="{{ width - margin_left - margin_right }}"
+				height="{{ height - margin_top - margin_bottom }}"/>
+		</g>
+	{% endblock %}
 </svg>

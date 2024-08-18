@@ -18,7 +18,7 @@ style_file_name = "config/style.json"
 level_file_name = f"config/level{level}.json"
 logo_file_name = "static/logo.b64.svg"
 skills_file_name = f"data/taso{level}.csv"
-combos_file_name = "data/sarjat.csv"
+combos_file_name = f"data/sarjat{level}.csv"
 
 # Set up Jinja2 environment
 env = Environment(loader=FileSystemLoader("."),
@@ -85,14 +85,13 @@ def read_combos(file_path):
     combos = []
 
     combo_number = 0
+    combo_total_value = 0
+    combo_target_value = int(df.columns[0])
     for i in range(0, len(df), 2):
         # Extract the metadata from the first row of the pair
         combo_title = str(df.iloc[i, 1])
-        combo_level = int(df.iloc[i, 0])
-
-        # Exclude combos of other levels
-        if combo_level != int(level):
-            continue
+        value = int(df.iloc[i, 0])
+        combo_total_value += value
 
         combo_number += 1
 
@@ -106,10 +105,17 @@ def read_combos(file_path):
         # Create a dictionary for the paired entry
         combo = Combo(title = f"Sarja {combo_number}, {combo_title}",
                       layers = [rope[:-1], feet],
-                      stop = rope[-1])
+                      stop = rope[-1],
+                      tick = value)
 
         # Append the entry to the data_entries list
         combos.append(dict(combo))
+    if combo_total_value > combo_target_value:
+        d["draw_combo_tick_values"] = True
+        d["combo_value"] = new_element(f"{combo_target_value}/{combo_total_value}", "tick_box")
+        d["combo_requirements"] = new_element("suoritusvaatimus:", "combo_requirements")
+    else:
+        d["draw_combo_tick_values"] = False
 
     return combos
 
@@ -158,7 +164,7 @@ for group in g:
         # hide tick labels
         for i in group["indices"]:
             for box in skills[i]["tick_boxes"]:
-                box["text"] = ""
+                box["lines"][0]["words"][0]["text"] = ""
     skill_groups.append({
         "start_index": group["indices"][0],
         "size": len(group["indices"]),

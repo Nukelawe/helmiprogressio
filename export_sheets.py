@@ -18,6 +18,15 @@ skill_gids = {
     "6": "163001563",
     "7": "540663671"
 }
+combo_gids = {
+    "1": "639649563",
+    "2": "315381077",
+    "3": "2019480086",
+    "4": "1516797408",
+    "5": "330080221",
+    "6": "232629461",
+    "7": "113063900",
+}
 
 def save_csv(filename, url):
     response = requests.get(url)
@@ -30,9 +39,10 @@ def get_url(sheet_id, gid, file_format):
     return f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format={file_format}&gid={gid}"
 
 urls = {}
-urls[f"sarjat.csv"] = get_url(combos_id, "639649563", "tsv")
 for level, gid in skill_gids.items():
     urls[f"taso{level}.csv"] = get_url(skills_id, gid, "csv")
+for level, gid in combo_gids.items():
+    urls[f"sarjat{level}.csv"] = get_url(combos_id, gid, "tsv")
 
 # download all
 for filename, url in urls.items():

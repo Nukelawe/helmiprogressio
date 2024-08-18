@@ -2,7 +2,8 @@ NUMBERS   = 1 2 3 4 5 6 7
 CSV_FILES = $(addsuffix .csv,$(addprefix data/taso,$(NUMBERS)))
 svgs      = $(addsuffix .svg,$(addprefix output/taso,$(NUMBERS)))
 pdfs      = $(svgs:.svg=.pdf)
-templates = templates/base.svg.jinja templates/skill_table.svg.jinja templates/skills.svg.jinja templates/combos.svg.jinja
+templates = templates/base.svg.jinja templates/skill_table.svg.jinja templates/skills.svg.jinja \
+	templates/combos.svg.jinja templates/combo.svg.jinja
 
 # Default target
 output/helmiprogressio.pdf: set_metadata.sh $(pdfs) | output
@@ -12,7 +13,7 @@ output/helmiprogressio.pdf: set_metadata.sh $(pdfs) | output
 # Target to generate SVG
 output/taso%-0.svg output/taso%-1.svg: generate_svg.py combo.py text_handling.py \
 	$(templates) static/logo.b64.svg \
-	data/taso%.csv data/sarjat.csv \
+	data/taso%.csv data/sarjat%.csv \
 	config/level%.json config/style.json config/text_classes.json \
 	| output
 	python $< $*
@@ -28,7 +29,7 @@ output/taso%.pdf: output/taso%-0.pdf output/taso%-1.pdf | output
 	@pdf_files="$(filter %.pdf,$^)";\
 	pdfunite $$pdf_files $@
 
-data/taso%.csv: export_sheets.py
+data/taso%.csv data/sarjat%.csv: export_sheets.py
 	python $< $*
 
 output:

@@ -25,14 +25,14 @@
     "table_roundness": 3,
     "table_border_thickness": 1,
 
-	"combo_gap": 20,
-	"combo_row_gap": 3,
+	"combo_gap": 12,
+	"combo_row_gap": 2,
 
 	"combo_border_thickness": 1,
 	"combo_beat_radius_x": 2.2,
 	"combo_beat_radius_y": 2.7,
 
-	"combo_row_height": 20,
+	"combo_row_height": 19,
 	"combo_box_width": 20,
 	"combo_box_tip": 3,
 	"combo_start_width": 7,

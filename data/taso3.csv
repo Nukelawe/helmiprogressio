@@ -2,19 +2,19 @@ kategoria,liike,suoritusvaatimus,tick
 3,perushyppy,100 putkeen,1
 ,kaksoishyppy (auki-auki tupla),*3,1
 ,vuoroaskel (speed step),40 putkeen,1
-14,twist,8 putkeen,2
-,etuheiluri,*4,2
+12,twist,8 putkeen,2
+,etuheiluri,*4,1 1
 ,sivuheiluri,8 putkeen,2
 ,polven nosto,*4,1 1
 ,kantanäpäytys,*4,1 1
 ,varvasnäpäytys,*4,1 1
-,haara -> jalkaristi -> haara,*4,1 1
-18,sving -> risti,*3,1 1
+16,sving -> risti,*3,1 1
 ,sving -> sving -> risti,*3,1 1
-,sving (takaperin),*3,1 1
-,sving -> sving (takaperin),*3,1 1
-,risti (takaperin),*3,2
-,caboose,*3,1 1
+,_(risti) (takaperin),*3,2
+,_(sving) (takaperin),*3,1 1
+,_(sving) -> _(sving) (takaperin),*3,1 1
+,_(sving) -> _(risti) (takaperin),*3,1 1
+8,caboose,*3,1 1
 ,texasilainen puolikäännös,*3,1 1
 ,kokokäännös,*3,1 1
 ,rannewrap,*3,1 1

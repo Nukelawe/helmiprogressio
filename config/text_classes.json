@@ -4,7 +4,8 @@
 		"font-size": 5,
 		"font-weight": "normal",
 		"font-style": "normal",
-		"fill": "black"
+		"fill": "black",
+		"line_spacing": 1
 	},
 	"title_circle": {
 		"font-family": "Source Code Pro",
@@ -57,5 +58,9 @@
 	},
 	"combo_stop": {
 		"font-size": 3
+	},
+	"combo_requirements": {
+		"font-size": 6,
+		"font-weight": "bold"
 	}
 }

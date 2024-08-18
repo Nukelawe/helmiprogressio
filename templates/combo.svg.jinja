@@ -14,32 +14,48 @@
 	</g>
 {% endmacro %}
 
-{% macro descriptions(layer, y) %}
+{% macro descriptions(layer, y, x_align, y_align, x_offset=0) %}
 	{% set n = namespace(x=0) %}
 	{% for row in layer %}
 		{% set n.x = combo_start_width %}
 		{% set row_loop = loop %}
 		{% for box in row %}
+			{% if x_align == "left" %}
+				{% set x_offset = x_offset + combo_box_tip + combo_border_thickness %}
+			{% elif x_align == "center" %}
+				{% set x_offset = x_offset + box.size * combo_box_width / 2 %}
+			{% elif x_align == "right" %}
+				{% set x_offset = x_offset + box.size * combo_box_width - combo_border_thickness %}
+			{% endif %}
 			{{ text_element(box.text,
-				x = n.x + (box.size * combo_box_width - box.text.width + combo_box_tip) / 2,
-				y = y + row_loop.index0 * (combo_row_height + combo_row_gap)) }}
+				x = n.x + x_offset,
+				y = y + row_loop.index0 * (combo_row_height + combo_row_gap),
+				x_align = x_align,
+				y_align = y_align) }}
 			{% set n.x = n.x + box.size * combo_box_width %}
 		{% endfor %}
 	{% endfor %}
 {% endmacro %}
 
-{% set combo_height = combo.layer_0|length * (combo_row_height + combo_row_gap)
-	+ combo_gap + styles.combo_title.descent %}
-{{ text_element(combo.title, y = ns.y + styles.combo_title.height ) }}
+{% set combo_height = combo.layer_0|length * (combo_row_height + combo_row_gap) + combo_gap %}
+{{ text_element(combo.title, y = ns.y) }}
 
 {% set x_tick_box = width - margin_right - margin_left - tick_box_size %}
-{% set y_tick_box = ns.y + combo_height + tick_box_size + combo_row_gap - combo_gap %}
+{% set y_tick_box = ns.y + combo_height - combo_gap + combo_row_gap %}
+
 <use href="#tick_box" x="{{ x_tick_box }}" y="{{ y_tick_box }}"/>
+{% if draw_combo_tick_values %}
+	{{ text_element(combo.tick,
+		x = x_tick_box + (tick_box_size - combo.tick.width) / 2 - combo.tick.x_bearing,
+		y = y_tick_box + (tick_box_size + combo.tick.height) / 2) }}
+{% endif %}
+{#
 {{ text_element(combo_completion,
 	x = x_tick_box - combo_row_gap - combo_completion.width,
 	y = y_tick_box + (tick_box_size + styles[combo_completion.style].x_height) / 2) }}
+#}
 
-<g transform="translate(0,{{ ns.y + styles.combo_title.height + combo_row_gap }})">
+<g transform="translate(0,{{ ns.y + combo_row_gap }})">
 	<use href="#combo_start_background"/>
 	{% set ns.y = ns.y + combo_height %}
 	{% for row in combo.layer_0 %}
@@ -83,13 +99,15 @@
 		<use href="#combo_stop_background"/>
 		<use href="#delimiter"/>
 		{{ text_element(combo.stop,
-			x = (combo_box_width - combo.stop.width + combo_box_tip) / 2,
-			y = combo_row_height / 2) }}
+			x = combo_stop_width * 0.5 + combo_box_tip * 0.3,
+			y = combo_row_height / 2,
+			x_align = "center",
+			y_align = "middle") }}
 		<use href="#combo_stop_borders"/>
 	</g>
 	<use href="#combo_start_borders"/>
 
 	{# text #}
-	{{ descriptions(combo.layer_0, combo_row_height / 2) }}
-	{{ descriptions(combo.layer_1, combo_row_height - 2 * combo_border_thickness) }}
+	{{ descriptions(combo.layer_0, combo_row_height / 2, "left", "middle") }}
+	{{ descriptions(combo.layer_1, combo_row_height - combo_border_thickness, "center", "bottom", x_offset=combo_box_tip/3) }}
 </g>

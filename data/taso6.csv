@@ -4,14 +4,14 @@ kategoria,liike,suoritusvaatimus,tick
 ,sving-auki-auki tripla,*3,1 1
 ,sving-EB tupla,*3,1 1
 ,sving-toad tupla,*3,1 1
-,sving-risti tupla (takaperin),*3,1 1
-,sving-auki tupla (takaperin),*3,1 1
+,_(sving)-_(risti) tupla (takaperin),*3,1 1
+,_(sving)-_(auki) tupla (takaperin),*3,1 1
 12,CL,*3,1 1
 ,EB toad,*3,1 1
 ,EB inverse toad,*3,1 1
 ,elefantti,*3,1 1
-,toad takaperin,*3,1 1
-,inverse toad takaperin,*3,1 1
+,_(toad) (takaperin),*3,1 1
+,_(inverse toad) (takaperin),*3,1 1
 ,KN toad,*3,1 1
 6,kyykkypotku,*3,2
 ,punnerrus,*3,2

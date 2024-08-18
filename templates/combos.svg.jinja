@@ -1,7 +1,7 @@
 {% extends "templates/base.svg.jinja" %}
 {% block body %}
 
-{% set combo_box_width = (body_width - combo_start_width) / 9 %}
+{% set combo_box_width = (body_width - combo_start_width - combo_stop_width) / 8 %}
 
 {% macro combo_box_background(length, x=0, y=0) %}
 	<polygon fill="{{ colors.bg2 }}" points="
@@ -60,12 +60,12 @@
 	</g>
 
 	<g id="delimiter">
-		<polyline points="0,0 {{ combo_box_tip }},{{ combo_row_height / 2 }}"
+		<polyline points="{{ combo_box_tip }},{{ combo_row_height / 2 }} 0,0"
 			stroke="{{ colors.hl }}"
 			stroke-dasharray="1 1"
 			stroke-linecap="round"
 			stroke-width="{{ combo_border_thickness / 2 }}"/>
-		<polyline points="0,{{ combo_row_height }} {{ combo_box_tip }},{{ combo_row_height / 2 }}"
+		<polyline points="{{ combo_box_tip }},{{ combo_row_height / 2 }} 0,{{ combo_row_height }}"
 			stroke="{{ colors.hl }}"
 			stroke-dasharray="1 1"
 			stroke-linecap="round"
@@ -92,4 +92,15 @@
 	{% include "templates/combo.svg.jinja" %}
 {% endfor %}
 
+{% if draw_combo_tick_values %}
+	{{ text_element(combo_value,
+		x = width - margin_right - margin_left - combo_value.width,
+		y = ns.y + combo_gap / 2) }}
+	{{ text_element(combo_requirements,
+		x = width - margin_right - margin_left - combo_requirements.width
+			- combo_value.width - styles[combo_requirements.style].x_width,
+		y = ns.y + combo_gap / 2) }}
+{% endif %}
+
 {% endblock %}
+{% block logo %}{% endblock %}

@@ -5,11 +5,11 @@ kategoria,liike,suoritusvaatimus,tick
 ,EB-auki tupla,*3,1 1
 ,EB-EB tupla,*3,1 1
 ,auki-AS/CL/TS tupla,*3,2
-,muu monikertahyppy,*3,1
+,muu monikertahyppy (IJRU taso 3+),*3,1
 1,vaihto TS/CL/AS,*3,1
-4,TS takaperin,*3,1 1
-,AS takaperin,*3,1 1
-,CL takaperin,*3,1 1
+4,_(TS) (takaperin),*3,1 1
+,_(AS) (takaperin),*3,1 1
+,_(CL) (takaperin),*3,1 1
 1,inverse kruger,*3,1 1
 2,aasinpotku (frog),*3,1
 ,muu peppuhyppy,*3,1
