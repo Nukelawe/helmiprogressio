@@ -13,36 +13,6 @@
 		{{ x + combo_box_tip }},{{ y + combo_row_height / 2 }}"/>
 {% endmacro %}
 
-{% macro combo_row_borders(length, x=0, y=0) %}
-	<g transform="translate({{ x }},{{ y }})">
-		<line x1="0" y1="0"
-			x2="{{ combo_box_width * length }}" y2="0"
-			stroke="{{ colors.border }}"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="{{ combo_border_thickness }}"/>
-		<line x1="0" y1="{{ combo_row_height }}"
-			x2="{{ combo_box_width * length }}" y2="{{ combo_row_height }}"
-			stroke="{{ colors.border }}"
-			stroke-linecap="round"
-			stroke-width="{{ combo_border_thickness }}"/>
-	</g>
-{% endmacro %}
-
-{% macro descriptions(layer, y) %}
-	{% set n = namespace(x=0) %}
-	{% for row in layer %}
-		{% set n.x = combo_start_width %}
-		{% set row_loop = loop %}
-		{% for box in row %}
-			{{ text_element(box.text,
-				x = n.x + (box.size * combo_box_width - box.text.width + combo_box_tip) / 2,
-				y = y + row_loop.index0 * (combo_row_height + combo_row_gap)) }}
-			{% set n.x = n.x + box.size * combo_box_width %}
-		{% endfor %}
-	{% endfor %}
-{% endmacro %}
-
 <defs>
 	<polyline id="combo_start_borders" points="
 		{{ combo_start_width }},{{ combo_row_height }}
@@ -119,70 +89,7 @@
 
 {% set ns = namespace(x=0, y=0, length=0) %}
 {% for combo in combos %}
-	{% set combo_height = combo.layer_0|length * (combo_row_height + combo_row_gap)
-	+ combo_gap + styles.combo_title.descent %}
-	{{ text_element(combo.title, y = ns.y + styles.combo_title.height ) }}
-
-	{% set x_tick_box = width - margin_right - margin_left - tick_box_size %}
-	{% set y_tick_box = ns.y + combo_height + tick_box_size + combo_row_gap - combo_gap %}
-	<use href="#tick_box" x="{{ x_tick_box }}" y="{{ y_tick_box }}"/>
-	{{ text_element(combo_completion,
-		x = x_tick_box - combo_row_gap - combo_completion.width,
-		y = y_tick_box + (tick_box_size + styles[combo_completion.style].x_height) / 2) }}
-
-	<g transform="translate(0,{{ ns.y + styles.combo_title.height + combo_row_gap }})">
-		<use href="#combo_start_background"/>
-		{% set ns.y = ns.y + combo_height %}
-		{% for row in combo.layer_0 %}
-			{% set ns.x = combo_start_width %}
-			{% set ns.length = 0 %}
-			{% set row_loop = loop %}
-			{% for box in row %}
-				<g transform="translate(0,
-					{{ row_loop.index0 * (combo_row_height + combo_row_gap )}})">
-
-					{{ combo_box_background(box.size, x = ns.x)}}
-
-					<use href="#delimiter" transform="translate({{ ns.x }},0)"/>
-					{% set ns.x = ns.x + box.size * combo_box_width %}
-					{% set ns.length = ns.length + box.size %}
-				</g>
-			{% endfor %}
-
-			{{ combo_row_borders(ns.length,
-				combo_start_width,
-				row_loop.index0 * (combo_row_height + combo_row_gap)) }}
-
-			{% for beat in beat_labels %}
-				{% if loop.index0 < ns.length %}
-				<g  transform="translate(
-					{{ combo_start_width + combo_box_width * (loop.index0 + 0.5) }},
-					{{ combo_border_thickness / 2 + row_loop.index0 * (combo_row_height + combo_row_gap )}})">
-					<use clip-path="#url(beat_label_clip)" href="#beat_label_background"/>
-					{{ text_element(beat,
-						x = - beat.width / 2 - beat.x_bearing,
-						y = (beat.height + combo_beat_radius_y - combo_border_thickness) / 2 )}}
-				</g>
-				{% endif %}
-			{% endfor %}
-		{% endfor %}
-
-		{% set x_stop = ns.x %}
-		{% set y_stop = (combo_row_height + combo_row_gap) * (combo.layer_0|length - 1) %}
-		<g transform="translate({{ x_stop }}, {{ y_stop }})">
-			<use href="#combo_stop_background"/>
-			<use href="#delimiter"/>
-			{{ text_element(combo.stop,
-				x = (combo_box_width - combo.stop.width + combo_box_tip) / 2,
-				y = combo_row_height / 2) }}
-			<use href="#combo_stop_borders"/>
-		</g>
-		<use href="#combo_start_borders"/>
-
-		{# text #}
-		{{ descriptions(combo.layer_0, combo_row_height / 2) }}
-		{{ descriptions(combo.layer_1, combo_row_height - 2 * combo_border_thickness) }}
-	</g>
+	{% include "templates/combo.svg.jinja" %}
 {% endfor %}
 
 {% endblock %}
