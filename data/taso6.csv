@@ -1,20 +1,20 @@
 kategoria,liike,suoritusvaatimus,tick
-1,vuoroaskel (speed step),3 minuutissa 270,1
-10,sving-sving-auki tripla,*3,1 1
-,sving-auki-auki tripla,*3,1 1
+2,speed step | vuoroaskel,3 minuutissa 270,1
+,"kaksoishyppy | auki-auki tupla, OO",30 sekunnissa 50,1
+10,sving-sving-auki tripla | SSO,*3,1 1
+,sving-auki-auki tripla | SOO,*3,1 1
 ,sving-EB tupla,*3,1 1
 ,sving-toad tupla,*3,1 1
-,_(sving)-_(risti) tupla (takaperin),*3,1 1
-,_(sving)-_(auki) tupla (takaperin),*3,1 1
+,_(sving)-_(risti) tupla (takaperin) | _(S)_(C),*3,1 1
+,_(sving)-_(auki) tupla (takaperin) | _(S)_(O),*3,1 1
 12,CL,*3,1 1
 ,EB toad,*3,1 1
 ,EB inverse toad,*3,1 1
 ,elefantti,*3,1 1
-,_(toad) (takaperin),*3,1 1
-,_(inverse toad) (takaperin),*3,1 1
+,toad takaperin | _(toad),*3,1 1
+,inverse toad takapern | _(inverse toad),*3,1 1
 ,KN toad,*3,1 1
-6,kyykkypotku,*3,2
-,punnerrus,*3,2
+4,"kyykkypotku | crab, ripaska",*3,2
+,punnerrus | push up,*3,2
 ,toad floater,*3,1 1
 ,loop irrotus,*3,2
-,muu wrap,*3,1 1

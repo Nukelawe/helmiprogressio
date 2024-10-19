@@ -1,0 +1,1865 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="2.0"
+   id="svg100"
+   sodipodi:docname="kategoriaesimerkki.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   inkscape:export-filename="kategoriaesimerkki.pdf"
+   inkscape:export-xdpi="14.38"
+   inkscape:export-ydpi="14.38"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview100"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.1893651"
+     inkscape:cx="571.31322"
+     inkscape:cy="476.30454"
+     inkscape:window-width="1920"
+     inkscape:window-height="1035"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg100" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient5"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient106"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop106" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.08655458"
+         id="stop1" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.91088343"
+         id="stop2" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="1"
+         id="stop107" />
+    </linearGradient>
+    <style
+       type="text/css"
+       id="style1"><![CDATA[
+				@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+ 			]]></style>
+    <rect
+       id="tick_box"
+       rx="1.5"
+       ry="1.5"
+       width="5"
+       height="5"
+       fill="white"
+       stroke-width="1"
+       stroke="#333333" />
+    <ellipse
+       id="beat_label_background"
+       cx="0"
+       cy="0"
+       rx="2.2"
+       ry="2.7"
+       fill="#333333"
+       clip-path="url(#beat_label_clip)" />
+    <clipPath
+       id="beat_label_clip">
+      <rect
+         id="test"
+         x="-2.2"
+         y="-0.5"
+         width="20"
+         height="5.4" />
+    </clipPath>
+    <polyline
+       id="combo_start_borders"
+       points="  7,19  0,19  0,0  7,0"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke="#333333"
+       stroke-width="1"
+       fill="none" />
+    <polyline
+       id="combo_stop_borders"
+       points="  0,0  20,0  20,19  0,19"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke="#333333"
+       stroke-width="1"
+       fill="none" />
+    <g
+       id="combo_start_background">
+      <polygon
+         fill="#d9d9d9"
+         points="   0,0   7,0   10,9.5   7,19   0,19"
+         id="polygon1" />
+      <g
+         transform="rotate(-90)"
+         id="g1">
+        <text
+           x="-15.7175"
+           y="5.27"
+           font-family="Bai Jamjuree"
+           font-size="5"
+           font-weight="normal"
+           font-style="normal"
+           fill="black"
+           xml:space="preserve"
+           id="text1">ALKU
+				</text>
+      </g>
+    </g>
+    <g
+       id="combo_stop_background">
+      <polygon
+         fill="#d9d9d9"
+         points="   0,0   20,0   20,19   0,19   3,9.5"
+         id="polygon2" />
+    </g>
+    <g
+       id="delimiter">
+      <polyline
+         points="3,9.5 0,0"
+         stroke="#808080"
+         stroke-dasharray="1 1"
+         stroke-linecap="round"
+         stroke-width="0.5"
+         id="polyline2" />
+      <polyline
+         points="3,9.5 0,19"
+         stroke="#808080"
+         stroke-dasharray="1 1"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="0.5"
+         id="polyline3" />
+    </g>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask6">
+      <g
+         id="g8"
+         transform="translate(-15,-15)">
+        <rect
+           style="display:inline;fill:url(#linearGradient8);fill-opacity:1;stroke-width:0;stroke-linejoin:round"
+           id="rect6"
+           width="28.739977"
+           height="44.885002"
+           x="168.84001"
+           y="91.614998" />
+        <rect
+           style="fill:url(#linearGradient9);stroke-width:0;stroke-linejoin:round"
+           id="rect7"
+           width="3.9685972"
+           height="44.885002"
+           x="168.6864"
+           y="91.557495" />
+      </g>
+    </mask>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient106"
+       id="linearGradient8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.16329531,0,0,0.98648358,166.47223,32.919221)"
+       x1="102.50001"
+       y1="59.500004"
+       x2="102.5"
+       y2="105"
+       spreadMethod="pad" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5"
+       id="linearGradient9"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(3.8149856,-0.05749893)"
+       x1="164.87141"
+       y1="114.0575"
+       x2="168.84001"
+       y2="114.0575" />
+  </defs>
+  <g
+     id="body"
+     transform="translate(15,15)"
+     clip-path="none"
+     mask="url(#mask6)"
+     inkscape:export-filename="../../../../ropeskipping/helmiprogressio/documents/output/skill_table_example3.pdf"
+     inkscape:export-xdpi="14.38"
+     inkscape:export-ydpi="14.38">
+    <g
+       id="title_banner"
+       transform="translate(21.944,8)">
+      <rect
+         id="background"
+         width="210"
+         height="297"
+         fill="#ffffff"
+         x="0"
+         y="0"
+         style="display:inline"
+         sodipodi:insensitive="true"
+         transform="translate(-36.944,-23)" />
+      <rect
+         width="73.440002"
+         height="20"
+         rx="3"
+         ry="3"
+         fill="#808080"
+         id="rect3"
+         x="0"
+         y="0" />
+      <text
+         x="20.952"
+         y="16"
+         font-family="'Bai Jamjuree'"
+         font-size="16px"
+         font-weight="bold"
+         font-style="normal"
+         fill="#ffffff"
+         xml:space="preserve"
+         id="text3">Hopea				</text>
+    </g>
+    <g
+       id="title_circle"
+       transform="translate(18,18)">
+      <circle
+         r="21.944"
+         fill="#ffffff"
+         id="circle3"
+         cx="0"
+         cy="0" />
+      <circle
+         r="18"
+         fill="#808080"
+         id="circle4"
+         cx="0"
+         cy="0" />
+      <text
+         x="-10.115"
+         y="11.3225"
+         font-family="'Source Code Pro'"
+         font-size="35px"
+         font-weight="bold"
+         font-style="normal"
+         fill="#ffffff"
+         xml:space="preserve"
+         id="text4">5				</text>
+    </g>
+    <g
+       id="name_line"
+       transform="translate(180,28)">
+      <line
+         x1="-50"
+         x2="0"
+         stroke="#333333"
+         stroke-width="0.5"
+         stroke-linecap="round"
+         id="line4"
+         y1="0"
+         y2="0" />
+      <text
+         x="-43.354"
+         y="5.4180002"
+         font-family="'Bai Jamjuree'"
+         font-size="6px"
+         font-weight="normal"
+         font-style="normal"
+         fill="#000000"
+         xml:space="preserve"
+         id="text5">hyppijän nimi				</text>
+    </g>
+    <g
+       id="table"
+       transform="translate(0,45)">
+      <defs
+         id="defs5">
+        <!-- Table walls -->
+        <rect
+           id="table_boundary"
+           rx="3"
+           ry="3"
+           fill="none"
+           stroke-width="1"
+           stroke="#333333"
+           width="175"
+           height="162"
+           x="0"
+           y="0" />
+        <clipPath
+           id="table_clip">
+          <use
+             href="#table_boundary"
+             id="use5" />
+        </clipPath>
+        <!-- Background color 1 -->
+        <rect
+           id="table_row_background"
+           width="175"
+           height="9"
+           x="0"
+           y="0" />
+      </defs>
+      <g
+         clip-path="url(#table_clip)"
+         id="g91">
+        <use
+           href="#table_row_background"
+           style="fill:#ffffff"
+           id="use6" />
+        <g
+           transform="translate(0,6.771)"
+           id="g7">
+          <text
+             x="2"
+             y="0"
+             font-family="'Bai Jamjuree'"
+             font-size="6px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#000000"
+             xml:space="preserve"
+             id="text6">liike				</text>
+          <text
+             x="120"
+             y="0"
+             font-family="'Bai Jamjuree'"
+             font-size="6px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#000000"
+             xml:space="preserve"
+             id="text7">suoritusvaatimus				</text>
+        </g>
+        <g
+           transform="translate(0,9)"
+           id="g11">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use7" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g9">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text8">speed step				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text9">30 sekunnissa 50				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g10">
+            <text
+               x="30.24"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text10">(vuoroaskel)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="table_tick_box"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+        </g>
+        <g
+           transform="translate(0,18)"
+           id="g14">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use11" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g12">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text11">kaksoishyppy				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text12">10 putkeen				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g13">
+            <text
+               x="36.634998"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text13">(auki-auki tupla, OO)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use13"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+        </g>
+        <g
+           transform="translate(0,27)"
+           id="g23">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use14" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g15">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text14">kaksoishyppy takaperin				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text15">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g22">
+            <text
+               x="60.025002"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text16">(				</text>
+            <text
+               x="61.138"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text17">auki				</text>
+            <line
+               x1="61.327"
+               x2="67.490501"
+               y1="-2.961"
+               y2="-2.961"
+               stroke="#666666"
+               stroke-width="0.35"
+               stroke-linecap="round"
+               id="line17" />
+            <text
+               x="67.9245"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text18">-				</text>
+            <text
+               x="69.275497"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text19">auki				</text>
+            <line
+               x1="69.4645"
+               x2="75.627998"
+               y1="-2.961"
+               y2="-2.961"
+               stroke="#666666"
+               stroke-width="0.35"
+               stroke-linecap="round"
+               id="line19" />
+            <text
+               x="76.061996"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text20"> tupla, 				</text>
+            <text
+               x="87.139503"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text21">OO				</text>
+            <line
+               x1="87.328499"
+               x2="91.696503"
+               y1="-2.961"
+               y2="-2.961"
+               stroke="#666666"
+               stroke-width="0.35"
+               stroke-linecap="round"
+               id="line21" />
+            <text
+               x="92.074501"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text22">)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use22"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+        </g>
+        <g
+           transform="translate(0,36)"
+           id="g26">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use23" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g24">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text23">auki-risti tupla				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text24">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g25">
+            <text
+               x="38.5"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text25">(OC)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use25"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+          <text
+             x="165.535"
+             y="6.1174998"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text26">2				</text>
+        </g>
+        <g
+           transform="translate(0,45)"
+           id="g30">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use26" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g28">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text27">risti-auki tupla				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text28">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g29">
+            <text
+               x="38.5"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text29">(CO)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use29"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+          <text
+             x="165.535"
+             y="6.1174998"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text30">2				</text>
+        </g>
+        <g
+           transform="translate(0,54)"
+           id="g34">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use30" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g32">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text31">risti-risti tupla				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text32">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g33">
+            <text
+               x="37.919998"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text33">(CC)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use33"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+          <text
+             x="165.535"
+             y="6.1174998"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text34">2				</text>
+        </g>
+        <g
+           transform="translate(0,63)"
+           id="g39">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use34" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g36">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text35">kokokäännös tupla				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text36">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g37">
+            <text
+               x="48.43"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text37">(full twist)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use37"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text38">1				</text>
+          <use
+             id="use38"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text39">1				</text>
+        </g>
+        <g
+           transform="translate(0,72)"
+           id="g43">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use39" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g41">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text40">TS				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text41">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g42" />
+          <!-- Tick boxes -->
+          <use
+             id="use42"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text42">1				</text>
+          <use
+             id="use43"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text43">1				</text>
+        </g>
+        <g
+           transform="translate(0,81)"
+           id="g47">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use44" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g45">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text44">AS				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text45">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g46" />
+          <!-- Tick boxes -->
+          <use
+             id="use46"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text46">1				</text>
+          <use
+             id="use47"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text47">1				</text>
+        </g>
+        <g
+           transform="translate(0,90)"
+           id="g54">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use48" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g49">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text48">EB takaperin				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text49">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g52">
+            <text
+               x="34.209999"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text50">(				</text>
+            <text
+               x="35.323002"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text51">EB				</text>
+            <line
+               x1="35.582001"
+               x2="39.410999"
+               y1="-2.961"
+               y2="-2.961"
+               stroke="#666666"
+               stroke-width="0.35"
+               stroke-linecap="round"
+               id="line51" />
+            <text
+               x="39.803001"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text52">)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use52"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text53">1				</text>
+          <use
+             id="use53"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text54">1				</text>
+        </g>
+        <g
+           transform="translate(0,99)"
+           id="g58">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use54" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g56">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text55">Awesome Annie				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text56">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g57" />
+          <!-- Tick boxes -->
+          <use
+             id="use57"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text57">1				</text>
+          <use
+             id="use58"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text58">1				</text>
+        </g>
+        <g
+           transform="translate(0,108)"
+           id="g62">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use59" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g60">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text59">inverse toad				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text60">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g61" />
+          <!-- Tick boxes -->
+          <use
+             id="use61"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text61">1				</text>
+          <use
+             id="use62"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text62">1				</text>
+        </g>
+        <g
+           transform="translate(0,117)"
+           id="g69">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use63" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g64">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text63">elefantti takaperin				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text64">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g67">
+            <text
+               x="47.619999"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text65">(				</text>
+            <text
+               x="48.733002"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text66">elefantti				</text>
+            <line
+               x1="48.908001"
+               x2="62.18"
+               y1="-2.961"
+               y2="-2.961"
+               stroke="#666666"
+               stroke-width="0.35"
+               stroke-linecap="round"
+               id="line66" />
+            <text
+               x="62.599998"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text67">)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use67"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text68">1				</text>
+          <use
+             id="use68"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text69">1				</text>
+        </g>
+        <g
+           transform="translate(0,126)"
+           id="g74">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use69" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g71">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text70">käärmeirrotus				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text71">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g72">
+            <text
+               x="36.900002"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text72">(snake release)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use72"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text73">1				</text>
+          <use
+             id="use73"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text74">1				</text>
+        </g>
+        <g
+           transform="translate(0,135)"
+           id="g79">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use74" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g76">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text75">peppuhyppy				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text76">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g77">
+            <text
+               x="33.52"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="3.5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#666666"
+               xml:space="preserve"
+               id="text77">(body bounce)				</text>
+          </g>
+          <!-- Tick boxes -->
+          <use
+             id="use77"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text78">1				</text>
+          <use
+             id="use78"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text79">1				</text>
+        </g>
+        <g
+           transform="translate(0,144)"
+           id="g83">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#d9d9d9"
+             id="use79" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g81">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text80">risti-risti floater				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text81">×3				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g82" />
+          <!-- Tick boxes -->
+          <use
+             id="use82"
+             href="#tick_box"
+             x="161"
+             y="2" />
+          <text
+             x="161.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text82">1				</text>
+          <use
+             id="use83"
+             href="#tick_box"
+             x="168"
+             y="2" />
+          <text
+             x="168.95"
+             y="6.0875001"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text83">1				</text>
+        </g>
+        <g
+           transform="translate(0,153)"
+           id="g90">
+          <!-- Background -->
+          <use
+             href="#table_row_background"
+             style="fill:#ededed"
+             id="use84" />
+          <!-- Text -->
+          <g
+             transform="translate(0,6.365)"
+             id="g88">
+            <text
+               x="2"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text84">EB-sving				</text>
+            <line
+               x1="2.3699999"
+               x2="21.955"
+               y1="-4.23"
+               y2="-4.23"
+               stroke="#000000"
+               stroke-width="0.5"
+               stroke-linecap="round"
+               id="line84" />
+            <text
+               x="22.674999"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text85"> → 				</text>
+            <text
+               x="28.959999"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text86">EB-sving				</text>
+            <line
+               x1="29.33"
+               x2="48.915001"
+               y1="-4.23"
+               y2="-4.23"
+               stroke="#000000"
+               stroke-width="0.5"
+               stroke-linecap="round"
+               id="line86" />
+            <text
+               x="49.634998"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text87"> (takaperin)				</text>
+            <text
+               x="120"
+               y="0"
+               font-family="'Bai Jamjuree'"
+               font-size="5px"
+               font-weight="normal"
+               font-style="normal"
+               fill="#000000"
+               xml:space="preserve"
+               id="text88">6 putkeen				</text>
+          </g>
+          <g
+             transform="translate(0,5.8055)"
+             id="g89" />
+          <!-- Tick boxes -->
+          <use
+             id="use89"
+             href="#tick_box"
+             x="164.5"
+             y="2" />
+          <text
+             x="165.535"
+             y="6.1174998"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text89">2				</text>
+        </g>
+      </g>
+      <g
+         transform="translate(0,9)"
+         id="g93">
+        <line
+           id="table_group_divider"
+           x1="0"
+           x2="175"
+           y1="0"
+           y2="0"
+           stroke="#333333"
+           stroke-width="1" />
+        <g
+           transform="rotate(90,175,13.5)"
+           id="g92" />
+      </g>
+      <g
+         transform="translate(0,36)"
+         id="g95">
+        <line
+           id="line93"
+           x1="0"
+           x2="175"
+           y1="0"
+           y2="0"
+           stroke="#333333"
+           stroke-width="1" />
+        <g
+           transform="rotate(90,175,18)"
+           id="g94">
+          <text
+             x="170.80499"
+             y="16"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text93">5/8				</text>
+        </g>
+      </g>
+      <g
+         transform="translate(0,72)"
+         id="g97">
+        <line
+           id="line95"
+           x1="0"
+           x2="175"
+           y1="0"
+           y2="0"
+           stroke="#333333"
+           stroke-width="1" />
+        <g
+           transform="rotate(90,175,27)"
+           id="g96">
+          <text
+             x="169.295"
+             y="25"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text95">9/12				</text>
+        </g>
+      </g>
+      <g
+         transform="translate(0,126)"
+         id="g99">
+        <line
+           id="line97"
+           x1="0"
+           x2="175"
+           y1="0"
+           y2="0"
+           stroke="#333333"
+           stroke-width="1" />
+        <g
+           transform="rotate(90,175,18)"
+           id="g98">
+          <text
+             x="170.8"
+             y="16"
+             font-family="'Source Code Pro'"
+             font-size="5px"
+             font-weight="bold"
+             font-style="normal"
+             fill="#999999"
+             xml:space="preserve"
+             id="text97">6/8				</text>
+        </g>
+      </g>
+      <use
+         href="#table_boundary"
+         id="use99" />
+    </g>
+    <g
+       transform="translate(0,267)"
+       id="g100">
+      <image
+         href="data:image/svg+xml;base64,"
+         x="56.240749"
+         y="-16"
+         width="67.518501"
+         height="16"
+         id="image99" />
+      <text
+         x="137.73599"
+         y="-1.497"
+         font-family="'Bai Jamjuree'"
+         font-size="6px"
+         font-weight="bold"
+         font-style="normal"
+         fill="#000000"
+         xml:space="preserve"
+         id="text99">ropeskipping.fi				</text>
+      <image
+         href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzNtbSIgaGVpZ2h0PSIzM21tIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMyAzMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCwwSDFWMUgwek0xLDBIMlYxSDF6TTIsMEgzVjFIMnpNMywwSDRWMUgzek00LDBINVYxSDR6TTUsMEg2VjFINXpNNiwwSDdWMUg2ek05LDBIMTBWMUg5ek0xMywwSDE0VjFIMTN6TTE2LDBIMTdWMUgxNnpNMjAsMEgyMVYxSDIwek0yNiwwSDI3VjFIMjZ6TTI3LDBIMjhWMUgyN3pNMjgsMEgyOVYxSDI4ek0yOSwwSDMwVjFIMjl6TTMwLDBIMzFWMUgzMHpNMzEsMEgzMlYxSDMxek0zMiwwSDMzVjFIMzJ6TTAsMUgxVjJIMHpNNiwxSDdWMkg2ek04LDFIOVYySDh6TTksMUgxMFYySDl6TTExLDFIMTJWMkgxMXpNMTIsMUgxM1YySDEyek0xNCwxSDE1VjJIMTR6TTE1LDFIMTZWMkgxNXpNMTYsMUgxN1YySDE2ek0xNywxSDE4VjJIMTd6TTE4LDFIMTlWMkgxOHpNMjEsMUgyMlYySDIxek0yMiwxSDIzVjJIMjJ6TTI0LDFIMjVWMkgyNHpNMjYsMUgyN1YySDI2ek0zMiwxSDMzVjJIMzJ6TTAsMkgxVjNIMHpNMiwySDNWM0gyek0zLDJINFYzSDN6TTQsMkg1VjNINHpNNiwySDdWM0g2ek05LDJIMTBWM0g5ek0xMCwySDExVjNIMTB6TTExLDJIMTJWM0gxMXpNMTQsMkgxNVYzSDE0ek0xOSwySDIwVjNIMTl6TTIxLDJIMjJWM0gyMXpNMjQsMkgyNVYzSDI0ek0yNiwySDI3VjNIMjZ6TTI4LDJIMjlWM0gyOHpNMjksMkgzMFYzSDI5ek0zMCwySDMxVjNIMzB6TTMyLDJIMzNWM0gzMnpNMCwzSDFWNEgwek0yLDNIM1Y0SDJ6TTMsM0g0VjRIM3pNNCwzSDVWNEg0ek02LDNIN1Y0SDZ6TTgsM0g5VjRIOHpNOSwzSDEwVjRIOXpNMTEsM0gxMlY0SDExek0xNSwzSDE2VjRIMTV6TTE5LDNIMjBWNEgxOXpNMjAsM0gyMVY0SDIwek0yMSwzSDIyVjRIMjF6TTIyLDNIMjNWNEgyMnpNMjYsM0gyN1Y0SDI2ek0yOCwzSDI5VjRIMjh6TTI5LDNIMzBWNEgyOXpNMzAsM0gzMVY0SDMwek0zMiwzSDMzVjRIMzJ6TTAsNEgxVjVIMHpNMiw0SDNWNUgyek0zLDRINFY1SDN6TTQsNEg1VjVINHpNNiw0SDdWNUg2ek0xMCw0SDExVjVIMTB6TTEyLDRIMTNWNUgxMnpNMTMsNEgxNFY1SDEzek0xNSw0SDE2VjVIMTV6TTE2LDRIMTdWNUgxNnpNMTgsNEgxOVY1SDE4ek0yMCw0SDIxVjVIMjB6TTIyLDRIMjNWNUgyMnpNMjYsNEgyN1Y1SDI2ek0yOCw0SDI5VjVIMjh6TTI5LDRIMzBWNUgyOXpNMzAsNEgzMVY1SDMwek0zMiw0SDMzVjVIMzJ6TTAsNUgxVjZIMHpNNiw1SDdWNkg2ek04LDVIOVY2SDh6TTEwLDVIMTFWNkgxMHpNMTMsNUgxNFY2SDEzek0xNCw1SDE1VjZIMTR6TTE1LDVIMTZWNkgxNXpNMTYsNUgxN1Y2SDE2ek0xNyw1SDE4VjZIMTd6TTIwLDVIMjFWNkgyMHpNMjIsNUgyM1Y2SDIyek0yNiw1SDI3VjZIMjZ6TTMyLDVIMzNWNkgzMnpNMCw2SDFWN0gwek0xLDZIMlY3SDF6TTIsNkgzVjdIMnpNMyw2SDRWN0gzek00LDZINVY3SDR6TTUsNkg2VjdINXpNNiw2SDdWN0g2ek04LDZIOVY3SDh6TTEwLDZIMTFWN0gxMHpNMTIsNkgxM1Y3SDEyek0xNCw2SDE1VjdIMTR6TTE2LDZIMTdWN0gxNnpNMTgsNkgxOVY3SDE4ek0yMCw2SDIxVjdIMjB6TTIyLDZIMjNWN0gyMnpNMjQsNkgyNVY3SDI0ek0yNiw2SDI3VjdIMjZ6TTI3LDZIMjhWN0gyN3pNMjgsNkgyOVY3SDI4ek0yOSw2SDMwVjdIMjl6TTMwLDZIMzFWN0gzMHpNMzEsNkgzMlY3SDMxek0zMiw2SDMzVjdIMzJ6TTEyLDdIMTNWOEgxMnpNMTMsN0gxNFY4SDEzek0xNiw3SDE3VjhIMTZ6TTIwLDdIMjFWOEgyMHpNMjEsN0gyMlY4SDIxek0yMiw3SDIzVjhIMjJ6TTAsOEgxVjlIMHpNMSw4SDJWOUgxek0yLDhIM1Y5SDJ6TTMsOEg0VjlIM3pNNCw4SDVWOUg0ek02LDhIN1Y5SDZ6TTcsOEg4VjlIN3pNOCw4SDlWOUg4ek05LDhIMTBWOUg5ek0xMCw4SDExVjlIMTB6TTEyLDhIMTNWOUgxMnpNMTQsOEgxNVY5SDE0ek0xOSw4SDIwVjlIMTl6TTIyLDhIMjNWOUgyMnpNMjMsOEgyNFY5SDIzek0yNSw4SDI2VjlIMjV6TTI3LDhIMjhWOUgyN3pNMjksOEgzMFY5SDI5ek0zMSw4SDMyVjlIMzF6TTAsOUgxVjEwSDB6TTIsOUgzVjEwSDJ6TTMsOUg0VjEwSDN6TTUsOUg2VjEwSDV6TTcsOUg4VjEwSDd6TTksOUgxMFYxMEg5ek0xNiw5SDE3VjEwSDE2ek0xOSw5SDIwVjEwSDE5ek0yMyw5SDI0VjEwSDIzek0yNCw5SDI1VjEwSDI0ek0yNSw5SDI2VjEwSDI1ek0yNiw5SDI3VjEwSDI2ek0yOSw5SDMwVjEwSDI5ek0zMCw5SDMxVjEwSDMwek0zMSw5SDMyVjEwSDMxek0zMiw5SDMzVjEwSDMyek02LDEwSDdWMTFINnpNOSwxMEgxMFYxMUg5ek0xMSwxMEgxMlYxMUgxMXpNMTIsMTBIMTNWMTFIMTJ6TTE1LDEwSDE2VjExSDE1ek0xNywxMEgxOFYxMUgxN3pNMTgsMTBIMTlWMTFIMTh6TTIxLDEwSDIyVjExSDIxek0yNCwxMEgyNVYxMUgyNHpNMjYsMTBIMjdWMTFIMjZ6TTI5LDEwSDMwVjExSDI5ek0zMCwxMEgzMVYxMUgzMHpNMzEsMTBIMzJWMTFIMzF6TTEsMTFIMlYxMkgxek0yLDExSDNWMTJIMnpNNSwxMUg2VjEySDV6TTcsMTFIOFYxMkg3ek04LDExSDlWMTJIOHpNOSwxMUgxMFYxMkg5ek0xMCwxMUgxMVYxMkgxMHpNMTEsMTFIMTJWMTJIMTF6TTE0LDExSDE1VjEySDE0ek0yMCwxMUgyMVYxMkgyMHpNMjEsMTFIMjJWMTJIMjF6TTI1LDExSDI2VjEySDI1ek0yNywxMUgyOFYxMkgyN3pNMjksMTFIMzBWMTJIMjl6TTMwLDExSDMxVjEySDMwek0wLDEySDFWMTNIMHpNMSwxMkgyVjEzSDF6TTUsMTJINlYxM0g1ek02LDEySDdWMTNINnpNOCwxMkg5VjEzSDh6TTksMTJIMTBWMTNIOXpNMTEsMTJIMTJWMTNIMTF6TTE2LDEySDE3VjEzSDE2ek0xOSwxMkgyMFYxM0gxOXpNMjIsMTJIMjNWMTNIMjJ6TTI1LDEySDI2VjEzSDI1ek0yNywxMkgyOFYxM0gyN3pNMjgsMTJIMjlWMTNIMjh6TTMxLDEySDMyVjEzSDMxek0zLDEzSDRWMTRIM3pNNCwxM0g1VjE0SDR6TTgsMTNIOVYxNEg4ek0xMCwxM0gxMVYxNEgxMHpNMTIsMTNIMTNWMTRIMTJ6TTEzLDEzSDE0VjE0SDEzek0xNCwxM0gxNVYxNEgxNHpNMTUsMTNIMTZWMTRIMTV6TTE2LDEzSDE3VjE0SDE2ek0xNywxM0gxOFYxNEgxN3pNMTgsMTNIMTlWMTRIMTh6TTE5LDEzSDIwVjE0SDE5ek0yMCwxM0gyMVYxNEgyMHpNMjEsMTNIMjJWMTRIMjF6TTIzLDEzSDI0VjE0SDIzek0yNiwxM0gyN1YxNEgyNnpNMzAsMTNIMzFWMTRIMzB6TTMxLDEzSDMyVjE0SDMxek0zMiwxM0gzM1YxNEgzMnpNMCwxNEgxVjE1SDB6TTEsMTRIMlYxNUgxek0yLDE0SDNWMTVIMnpNMywxNEg0VjE1SDN6TTQsMTRINVYxNUg0ek01LDE0SDZWMTVINXpNNiwxNEg3VjE1SDZ6TTcsMTRIOFYxNUg3ek04LDE0SDlWMTVIOHpNMTAsMTRIMTFWMTVIMTB6TTEzLDE0SDE0VjE1SDEzek0xNCwxNEgxNVYxNUgxNHpNMTUsMTRIMTZWMTVIMTV6TTE2LDE0SDE3VjE1SDE2ek0yNSwxNEgyNlYxNUgyNXpNMjYsMTRIMjdWMTVIMjZ6TTI3LDE0SDI4VjE1SDI3ek0zMSwxNEgzMlYxNUgzMXpNMCwxNUgxVjE2SDB6TTEsMTVIMlYxNkgxek0yLDE1SDNWMTZIMnpNMywxNUg0VjE2SDN6TTcsMTVIOFYxNkg3ek05LDE1SDEwVjE2SDl6TTEwLDE1SDExVjE2SDEwek0xMiwxNUgxM1YxNkgxMnpNMTMsMTVIMTRWMTZIMTN6TTE5LDE1SDIwVjE2SDE5ek0yMSwxNUgyMlYxNkgyMXpNMjIsMTVIMjNWMTZIMjJ6TTIzLDE1SDI0VjE2SDIzek0yNCwxNUgyNVYxNkgyNHpNMjgsMTVIMjlWMTZIMjh6TTI5LDE1SDMwVjE2SDI5ek0zMCwxNUgzMVYxNkgzMHpNMzEsMTVIMzJWMTZIMzF6TTIsMTZIM1YxN0gyek01LDE2SDZWMTdINXpNNiwxNkg3VjE3SDZ6TTksMTZIMTBWMTdIOXpNMTAsMTZIMTFWMTdIMTB6TTEyLDE2SDEzVjE3SDEyek0xNCwxNkgxNVYxN0gxNHpNMjUsMTZIMjZWMTdIMjV6TTI3LDE2SDI4VjE3SDI3ek0yOCwxNkgyOVYxN0gyOHpNMzEsMTZIMzJWMTdIMzF6TTAsMTdIMVYxOEgwek0yLDE3SDNWMThIMnpNNCwxN0g1VjE4SDR6TTUsMTdINlYxOEg1ek03LDE3SDhWMThIN3pNMTYsMTdIMTdWMThIMTZ6TTE4LDE3SDE5VjE4SDE4ek0yMCwxN0gyMVYxOEgyMHpNMjMsMTdIMjRWMThIMjN6TTI2LDE3SDI3VjE4SDI2ek0yOSwxN0gzMFYxOEgyOXpNMzAsMTdIMzFWMThIMzB6TTMxLDE3SDMyVjE4SDMxek0zMiwxN0gzM1YxOEgzMnpNMCwxOEgxVjE5SDB6TTIsMThIM1YxOUgyek02LDE4SDdWMTlINnpNNywxOEg4VjE5SDd6TTgsMThIOVYxOUg4ek0xMSwxOEgxMlYxOUgxMXpNMTIsMThIMTNWMTlIMTJ6TTE1LDE4SDE2VjE5SDE1ek0xNiwxOEgxN1YxOUgxNnpNMTcsMThIMThWMTlIMTd6TTE4LDE4SDE5VjE5SDE4ek0yMCwxOEgyMVYxOUgyMHpNMjEsMThIMjJWMTlIMjF6TTIyLDE4SDIzVjE5SDIyek0yNiwxOEgyN1YxOUgyNnpNMjcsMThIMjhWMTlIMjd6TTI5LDE4SDMwVjE5SDI5ek0zMCwxOEgzMVYxOUgzMHpNMzEsMThIMzJWMTlIMzF6TTAsMTlIMVYyMEgwek0zLDE5SDRWMjBIM3pNNCwxOUg1VjIwSDR6TTUsMTlINlYyMEg1ek05LDE5SDEwVjIwSDl6TTExLDE5SDEyVjIwSDExek0xNCwxOUgxNVYyMEgxNHpNMTUsMTlIMTZWMjBIMTV6TTE2LDE5SDE3VjIwSDE2ek0xOSwxOUgyMFYyMEgxOXpNMjAsMTlIMjFWMjBIMjB6TTIxLDE5SDIyVjIwSDIxek0yMiwxOUgyM1YyMEgyMnpNMjQsMTlIMjVWMjBIMjR6TTI1LDE5SDI2VjIwSDI1ek0yNywxOUgyOFYyMEgyN3pNMzAsMTlIMzFWMjBIMzB6TTMxLDE5SDMyVjIwSDMxek0zMiwxOUgzM1YyMEgzMnpNMCwyMEgxVjIxSDB6TTEsMjBIMlYyMUgxek02LDIwSDdWMjFINnpNNywyMEg4VjIxSDd6TTgsMjBIOVYyMUg4ek05LDIwSDEwVjIxSDl6TTEwLDIwSDExVjIxSDEwek0xMSwyMEgxMlYyMUgxMXpNMTUsMjBIMTZWMjFIMTV6TTE3LDIwSDE4VjIxSDE3ek0xOSwyMEgyMFYyMUgxOXpNMjMsMjBIMjRWMjFIMjN6TTI0LDIwSDI1VjIxSDI0ek0yNSwyMEgyNlYyMUgyNXpNMjgsMjBIMjlWMjFIMjh6TTMxLDIwSDMyVjIxSDMxek0zMiwyMEgzM1YyMUgzMnpNMCwyMUgxVjIySDB6TTEsMjFIMlYyMkgxek00LDIxSDVWMjJINHpNNywyMUg4VjIySDd6TTEwLDIxSDExVjIySDEwek0xMiwyMUgxM1YyMkgxMnpNMTMsMjFIMTRWMjJIMTN6TTE0LDIxSDE1VjIySDE0ek0xNiwyMUgxN1YyMkgxNnpNMTksMjFIMjBWMjJIMTl6TTIwLDIxSDIxVjIySDIwek0yMiwyMUgyM1YyMkgyMnpNMjMsMjFIMjRWMjJIMjN6TTI1LDIxSDI2VjIySDI1ek0yNiwyMUgyN1YyMkgyNnpNMjksMjFIMzBWMjJIMjl6TTMyLDIxSDMzVjIySDMyek0wLDIySDFWMjNIMHpNMywyMkg0VjIzSDN6TTQsMjJINVYyM0g0ek02LDIySDdWMjNINnpNNywyMkg4VjIzSDd6TTEwLDIySDExVjIzSDEwek0xMywyMkgxNFYyM0gxM3pNMTQsMjJIMTVWMjNIMTR6TTE1LDIySDE2VjIzSDE1ek0xNiwyMkgxN1YyM0gxNnpNMTcsMjJIMThWMjNIMTd6TTIwLDIySDIxVjIzSDIwek0yMSwyMkgyMlYyM0gyMXpNMjQsMjJIMjVWMjNIMjR6TTI4LDIySDI5VjIzSDI4ek0zMSwyMkgzMlYyM0gzMXpNMCwyM0gxVjI0SDB6TTMsMjNINFYyNEgzek00LDIzSDVWMjRINHpNMTIsMjNIMTNWMjRIMTJ6TTEzLDIzSDE0VjI0SDEzek0xNSwyM0gxNlYyNEgxNXpNMTksMjNIMjBWMjRIMTl6TTIxLDIzSDIyVjI0SDIxek0yMiwyM0gyM1YyNEgyMnpNMjUsMjNIMjZWMjRIMjV6TTI2LDIzSDI3VjI0SDI2ek0yOCwyM0gyOVYyNEgyOHpNMjksMjNIMzBWMjRIMjl6TTMwLDIzSDMxVjI0SDMwek0zMSwyM0gzMlYyNEgzMXpNMCwyNEgxVjI1SDB6TTIsMjRIM1YyNUgyek02LDI0SDdWMjVINnpNOSwyNEgxMFYyNUg5ek0xMiwyNEgxM1YyNUgxMnpNMTQsMjRIMTVWMjVIMTR6TTE1LDI0SDE2VjI1SDE1ek0xNiwyNEgxN1YyNUgxNnpNMTcsMjRIMThWMjVIMTd6TTE5LDI0SDIwVjI1SDE5ek0yMiwyNEgyM1YyNUgyMnpNMjMsMjRIMjRWMjVIMjN6TTI0LDI0SDI1VjI1SDI0ek0yNSwyNEgyNlYyNUgyNXpNMjYsMjRIMjdWMjVIMjZ6TTI3LDI0SDI4VjI1SDI3ek0yOCwyNEgyOVYyNUgyOHpNMzIsMjRIMzNWMjVIMzJ6TTgsMjVIOVYyNkg4ek0xMCwyNUgxMVYyNkgxMHpNMTUsMjVIMTZWMjZIMTV6TTE2LDI1SDE3VjI2SDE2ek0xNywyNUgxOFYyNkgxN3pNMTgsMjVIMTlWMjZIMTh6TTIwLDI1SDIxVjI2SDIwek0yNCwyNUgyNVYyNkgyNHpNMjgsMjVIMjlWMjZIMjh6TTMwLDI1SDMxVjI2SDMwek0zMSwyNUgzMlYyNkgzMXpNMzIsMjVIMzNWMjZIMzJ6TTAsMjZIMVYyN0gwek0xLDI2SDJWMjdIMXpNMiwyNkgzVjI3SDJ6TTMsMjZINFYyN0gzek00LDI2SDVWMjdINHpNNSwyNkg2VjI3SDV6TTYsMjZIN1YyN0g2ek04LDI2SDlWMjdIOHpNOSwyNkgxMFYyN0g5ek0xMSwyNkgxMlYyN0gxMXpNMTIsMjZIMTNWMjdIMTJ6TTE1LDI2SDE2VjI3SDE1ek0xNiwyNkgxN1YyN0gxNnpNMjEsMjZIMjJWMjdIMjF6TTIzLDI2SDI0VjI3SDIzek0yNCwyNkgyNVYyN0gyNHpNMjYsMjZIMjdWMjdIMjZ6TTI4LDI2SDI5VjI3SDI4ek0yOSwyNkgzMFYyN0gyOXpNMzEsMjZIMzJWMjdIMzF6TTAsMjdIMVYyOEgwek02LDI3SDdWMjhINnpNMTAsMjdIMTFWMjhIMTB6TTExLDI3SDEyVjI4SDExek0xNCwyN0gxNVYyOEgxNHpNMTUsMjdIMTZWMjhIMTV6TTE2LDI3SDE3VjI4SDE2ek0xOCwyN0gxOVYyOEgxOHpNMTksMjdIMjBWMjhIMTl6TTIxLDI3SDIyVjI4SDIxek0yMiwyN0gyM1YyOEgyMnpNMjMsMjdIMjRWMjhIMjN6TTI0LDI3SDI1VjI4SDI0ek0yOCwyN0gyOVYyOEgyOHpNMjksMjdIMzBWMjhIMjl6TTMwLDI3SDMxVjI4SDMwek0wLDI4SDFWMjlIMHpNMiwyOEgzVjI5SDJ6TTMsMjhINFYyOUgzek00LDI4SDVWMjlINHpNNiwyOEg3VjI5SDZ6TTgsMjhIOVYyOUg4ek0xMCwyOEgxMVYyOUgxMHpNMTEsMjhIMTJWMjlIMTF6TTE3LDI4SDE4VjI5SDE3ek0yMCwyOEgyMVYyOUgyMHpNMjQsMjhIMjVWMjlIMjR6TTI1LDI4SDI2VjI5SDI1ek0yNiwyOEgyN1YyOUgyNnpNMjcsMjhIMjhWMjlIMjd6TTI4LDI4SDI5VjI5SDI4ek0zMSwyOEgzMlYyOUgzMXpNMzIsMjhIMzNWMjlIMzJ6TTAsMjlIMVYzMEgwek0yLDI5SDNWMzBIMnpNMywyOUg0VjMwSDN6TTQsMjlINVYzMEg0ek02LDI5SDdWMzBINnpNOCwyOUg5VjMwSDh6TTksMjlIMTBWMzBIOXpNMTIsMjlIMTNWMzBIMTJ6TTEzLDI5SDE0VjMwSDEzek0xNCwyOUgxNVYzMEgxNHpNMTUsMjlIMTZWMzBIMTV6TTE2LDI5SDE3VjMwSDE2ek0xNywyOUgxOFYzMEgxN3pNMTksMjlIMjBWMzBIMTl6TTIwLDI5SDIxVjMwSDIwek0yMiwyOUgyM1YzMEgyMnpNMjMsMjlIMjRWMzBIMjN6TTI1LDI5SDI2VjMwSDI1ek0yNywyOUgyOFYzMEgyN3pNMjgsMjlIMjlWMzBIMjh6TTI5LDI5SDMwVjMwSDI5ek0zMSwyOUgzMlYzMEgzMXpNMzIsMjlIMzNWMzBIMzJ6TTAsMzBIMVYzMUgwek0yLDMwSDNWMzFIMnpNMywzMEg0VjMxSDN6TTQsMzBINVYzMUg0ek02LDMwSDdWMzFINnpNOCwzMEg5VjMxSDh6TTksMzBIMTBWMzFIOXpNMTAsMzBIMTFWMzFIMTB6TTEzLDMwSDE0VjMxSDEzek0xNCwzMEgxNVYzMUgxNHpNMTUsMzBIMTZWMzFIMTV6TTE4LDMwSDE5VjMxSDE4ek0yMSwzMEgyMlYzMUgyMXpNMjMsMzBIMjRWMzFIMjN6TTI1LDMwSDI2VjMxSDI1ek0yNiwzMEgyN1YzMUgyNnpNMjcsMzBIMjhWMzFIMjd6TTI5LDMwSDMwVjMxSDI5ek0wLDMxSDFWMzJIMHpNNiwzMUg3VjMySDZ6TTgsMzFIOVYzMkg4ek0xMCwzMUgxMVYzMkgxMHpNMTIsMzFIMTNWMzJIMTJ6TTEzLDMxSDE0VjMySDEzek0xNiwzMUgxN1YzMkgxNnpNMTksMzFIMjBWMzJIMTl6TTIwLDMxSDIxVjMySDIwek0yMSwzMUgyMlYzMkgyMXpNMjIsMzFIMjNWMzJIMjJ6TTIzLDMxSDI0VjMySDIzek0yNSwzMUgyNlYzMkgyNXpNMjksMzFIMzBWMzJIMjl6TTMwLDMxSDMxVjMySDMwek0wLDMySDFWMzNIMHpNMSwzMkgyVjMzSDF6TTIsMzJIM1YzM0gyek0zLDMySDRWMzNIM3pNNCwzMkg1VjMzSDR6TTUsMzJINlYzM0g1ek02LDMySDdWMzNINnpNOCwzMkg5VjMzSDh6TTEyLDMySDEzVjMzSDEyek0xNCwzMkgxNVYzM0gxNHpNMTUsMzJIMTZWMzNIMTV6TTE2LDMySDE3VjMzSDE2ek0xNywzMkgxOFYzM0gxN3pNMTgsMzJIMTlWMzNIMTh6TTE5LDMySDIwVjMzSDE5ek0yMiwzMkgyM1YzM0gyMnpNMjQsMzJIMjVWMzNIMjR6TTI4LDMySDI5VjMzSDI4ek0zMSwzMkgzMlYzM0gzMXoiIGlkPSJxci1wYXRoIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiAvPjwvc3ZnPg=="
+         x="0"
+         y="-33"
+         width="33"
+         height="33"
+         id="image100" />
+      <text
+         x="4.0100002"
+         y="4.5549998"
+         font-family="'Bai Jamjuree'"
+         font-size="5px"
+         font-weight="normal"
+         font-style="normal"
+         fill="#000000"
+         xml:space="preserve"
+         id="text100">mallivideot				</text>
+      <rect
+         style="display:none"
+         id="logo_bounding_box"
+         fill="none"
+         stroke="#000000"
+         stroke-width="0.2"
+         x="56.240749"
+         y="-16"
+         width="67.518501"
+         height="16" />
+    </g>
+    <rect
+       style="display:none"
+       id="margins"
+       fill="none"
+       stroke="#000000"
+       stroke-width="0.2"
+       x="0"
+       y="0"
+       width="180"
+       height="267" />
+  </g>
+</svg>

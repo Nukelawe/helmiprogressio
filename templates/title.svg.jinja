@@ -1,0 +1,20 @@
+{% set gap = (styles.title_banner.height - styles.title_banner.cap_height) / 2 %}
+<g id="title_banner" transform="translate(
+	{{ title_circle_radius + gap }},
+	{{ title_circle_radius - styles.title_banner.height / 2}})">
+	<rect width="{{ title_circle_radius + title_banner.width + gap * 2 }}"
+		height="{{ styles.title_banner.height }}"
+		rx="{{title_banner_roundness}}" ry="{{title_banner_roundness}}"
+		fill="{{ colors.hl }}"/>
+	{{ macros.text_element(title_banner,
+		x = title_circle_radius + gap - title_banner.x_bearing,
+		y = styles.title_banner.ascent) }}
+</g>
+
+<g id="title_circle" transform="translate({{ title_circle_radius }}, {{ title_circle_radius }})">
+	<circle r="{{ title_circle_radius + gap }}" fill="white"/>
+	<circle r="{{ title_circle_radius }}" fill="{{ colors.hl }}"/>
+	{{ macros.text_element(title_circle,
+		x = - title_circle.width / 2 - title_circle.x_bearing,
+		y = title_circle.height / 2) }}
+</g>

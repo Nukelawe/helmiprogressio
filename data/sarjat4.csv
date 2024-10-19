@@ -1,5 +1,9 @@
-2	nimi	1.1	1.2	1.3	1.4	1.5	1.6	1.7	1.8	2.1	2.2	2.3	2.4	2.5	2.6	2.7	2.8	3.1	3.2	3.3	3.4	3.4	3.6	3.7	3.8	4.1	4.2	4.3	4.4	4.5	4.6	4.7	4.8	5.1
-1	Get Ready For This - 2 Unlimited	auki	auki	sving\n vas.	EB-sving oik.	auki	auki	toad vas.	auki	auki	auki	risti (V)	risti (O)	auki	marlee kokokäännös	.	.	.	.	sving (V)	KN-sving (O)	.	.	toad (O)	.	.	.	risti (O)	risti (V)	toad (V)	caboose	.	.	loppu
-		.																																
-1	jotain takaperin	.								loppu																								
-		.																																
+4	nimi	1.1	1.2	1.3	1.4	1.5	1.6	1.7	1.8	2.1	2.2	2.3	2.4	2.5	2.6	2.7	2.8	3.1	3.2	3.3	3.4	3.4	3.6	3.7	3.8	4.1	4.2	4.3	4.4	4.5	4.6	4.7	4.8	5.1
+2	Get Ready For This - 2 Unlimited	auki	auki	sving\n vas.	EB-sving\n oik.	auki	auki	toad\n vas. jalka	auki	auki	auki	risti\n vas.	risti\n oik.	auki	180 taakse\n vas. kautta	180 eteen\n vas. kautta,\n jalkakoukku	auki	auki	auki	180 taakse\n vas. kautta	texan\n 180 eteen\n oik. kautta	auki	auki	toad\n vas. jalka	auki	auki	auki	risti\n oik. päällä	risti\n vas. päällä	toad\n vas. jalka	caboose\n aloitus	caboose\n risti	caboose\n purku	varvas-\n pysäytys\n takaperin
+		.	.	vale-EB		.			.	.	.	.	.	.	“Marlee”		.	.	.	“Mad Dog”		.			.	.				.				.
+1	Tuplia	auki-auki\n tupla	sving-auki\n tupla	sving-risti\n tupla	auki	auki-auki\n tupla	sving-auki\n tupla	käännös\n taakse\n tupla	_(auki)	varvas-\n pysäytys\n takaperin																								
+																																		
+1	Heitot ja wrapit	kalastus		auki	auki	sving	EB-wrap	EB-wrap\n purku,\n käännös\n taakse	_(auki)	_(auki)	_(auki)	texan\n 180	auki	sving-sving floater				varvas-\n pysäytys																
+		.					.		.	haara	jalkaristi	.																						
+1	jalka-käsi koordinaatio	auki		sving vas.		sving oik.	risti	auki	auki	auki	risti	risti	risti	auki	auki	auki	auki	varvas-\n pysäytys																
+		perus		potku sivulle\n oik. jalka		potku taakse\n vas. jalka	potku eteen\n vas. jalka	polven nosto\n vas. jalka	perus	haara	potku taakse\n oik. jalka	haara	potku taakse\n vas. jalka	haara	.			.																

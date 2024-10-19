@@ -1,0 +1,83 @@
+{% import "templates/macros.svg.jinja" as macros with context %}
+
+<rect id="tick_box"
+	rx="{{ tick_box_roundness }}"
+	ry="{{ tick_box_roundness }}"
+	width="{{ tick_box_size }}"
+	height="{{ tick_box_size }}"
+	fill="white"
+	stroke-width="{{ tick_box_border_thickness }}"
+	stroke="{{ colors.border }}"
+/>
+
+<ellipse id="beat_label_background"
+	cx="0" cy="0"
+	rx="{{ combo_beat_radius_x }}"
+	ry="{{ combo_beat_radius_y }}"
+	fill="{{ colors.border }}"
+	clip-path="url(#beat_label_clip)"/>
+<clipPath id="beat_label_clip">
+	<rect id="test" x="{{ - combo_beat_radius_x }}"
+		y="{{ - combo_border_thickness / 2 }}"
+		width="{{ combo_box_width }}"
+		height="{{ combo_beat_radius_y * 2 }}"/>
+</clipPath>
+
+<polyline id="combo_start_borders" points="
+	{{ combo_start_width }},{{ combo_row_height }}
+	0,{{ combo_row_height }}
+	0,0
+	{{ combo_start_width }},0"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	stroke="{{ colors.border }}"
+	stroke-width="{{ combo_border_thickness }}"
+	fill="none"/>
+
+<polyline id="combo_stop_borders" points="
+	0,0
+	{{ combo_stop_width }},0
+	{{ combo_stop_width }},{{ combo_row_height }}
+	0,{{ combo_row_height }}"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	stroke="{{ colors.border }}"
+	stroke-width="{{ combo_border_thickness }}"
+	fill="none"/>
+
+<g id="combo_start_background">
+	<polygon fill="{{ colors.bg1 }}" points="
+		0,0
+		{{ combo_start_width }},0
+		{{ combo_start_width + combo_box_tip }},{{ combo_row_height / 2 }}
+		{{ combo_start_width }},{{ combo_row_height }}
+		0,{{ combo_row_height }}"/>
+	<g transform="rotate(-90)">
+		{{ macros.text_element(combo_start,
+			x = - (combo_start.width + combo_row_height) / 2,
+			y = (combo_start.height + combo_start_width) / 2) }}
+	</g>
+</g>
+
+<g id="combo_stop_background">
+	<polygon fill="{{ colors.bg1 }}" points="
+		0,0
+		{{ combo_stop_width }},0
+		{{ combo_stop_width }},{{ combo_row_height }}
+		0,{{ combo_row_height }}
+		{{ combo_box_tip }},{{ combo_row_height / 2 }}"/>
+</g>
+
+<g id="delimiter">
+	<polyline points="{{ combo_box_tip }},{{ combo_row_height / 2 }} 0,0"
+		stroke="{{ colors.hl }}"
+		stroke-dasharray="1 1"
+		stroke-linecap="round"
+		stroke-width="{{ combo_border_thickness / 2 }}"/>
+	<polyline points="{{ combo_box_tip }},{{ combo_row_height / 2 }} 0,{{ combo_row_height }}"
+		stroke="{{ colors.hl }}"
+		stroke-dasharray="1 1"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="{{ combo_border_thickness / 2 }}"/>
+</g>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+{% set combo_height = combo.layer_0|length * combo_row_height + (combo.layer_0|length - 1) * combo_row_gap %}
+{% set combo_width = combo_start_width + combo_stop_width + combo_box_width * 8 %}
+<svg width="{{ combo_width }}mm"
+	height="{{ combo_height }}mm"
+	viewBox="0 0 {{ combo_width }} {{ combo_height }}"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	version="2.0">
+	<defs>
+        <style type="text/css">
+			<![CDATA[
+				@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+ 			]]>
+		</style>
+		{% include "templates/defs.svg.jinja" %}
+    </defs>
+
+	{% include "templates/combo.svg.jinja" %}
+</svg>

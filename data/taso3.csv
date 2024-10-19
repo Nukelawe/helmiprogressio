@@ -1,22 +1,20 @@
 kategoria,liike,suoritusvaatimus,tick
 3,perushyppy,100 putkeen,1
-,kaksoishyppy (auki-auki tupla),*3,1
-,vuoroaskel (speed step),40 putkeen,1
-12,twist,8 putkeen,2
-,etuheiluri,*4,1 1
-,sivuheiluri,8 putkeen,2
-,polven nosto,*4,1 1
-,kantanäpäytys,*4,1 1
-,varvasnäpäytys,*4,1 1
-16,sving -> risti,*3,1 1
-,sving -> sving -> risti,*3,1 1
-,_(risti) (takaperin),*3,2
-,_(sving) (takaperin),*3,1 1
-,_(sving) -> _(sving) (takaperin),*3,1 1
-,_(sving) -> _(risti) (takaperin),*3,1 1
+,"kaksoishyppy | auki-auki tupla, OO, double under",*3,1
+,vuoroaskel,40 putkeen,1
+12,twist,4 putkeen,2
+,etuheiluri | swing kick,4 putkeen,1 1
+,sivuheiluri | pendulum,4 putkeen,2
+,polven nosto | high knees,*4,1 1
+,kantanäpäytys | heel tap,*4,1 1
+,varvasnäpäytys | toe tap,*4,1 1
+8,"risti takaperin | _(risti), _(C)",*3,2
+,"sving takaperin | _(sving), _(S)",*3,1 1
+,_(sving) -> _(sving),*3,1 1
+,_(sving) -> _(risti),*3,1 1
 8,caboose,*3,1 1
-,texasilainen puolikäännös,*3,1 1
-,kokokäännös,*3,1 1
+,texasilainen puolikäännös | texan 180,*3,1 1
+,kokokäännös | 360,*3,1 1
 ,rannewrap,*3,1 1
 1,kärrynpyörä,*3,1 1
 ,vuorikiipeilijä,*3,1

@@ -7,11 +7,30 @@ import numpy as np
 import re
 from combo import Combo
 from text_handling import new_element, measure_font, text_classes
+import qrcode
+from qrcode.image.svg import SvgPathImage
+import base64
 
 # Check if the correct number of arguments is provided
 if len(sys.argv) != 2:
     sys.exit(1)
 level = sys.argv[1]
+
+# Generate QR code as an SVG
+def generate_qr_svg(data):
+    qr = qrcode.QRCode(
+        version=1,  # Controls the size of the QR code
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        border=0,
+    )
+    qr.add_data(data)
+    qr.make(fit=True)
+
+    # Create an SVG object for the QR code
+    img = qr.make_image(image_factory=SvgPathImage)
+    svg_data = img.to_string().decode("utf-8")  # Convert SVG to string
+    encoded_svg = base64.b64encode(svg_data.encode("utf-8")).decode("utf-8")
+    return encoded_svg
 
 # Input-files
 style_file_name = "config/style.json"
@@ -42,7 +61,9 @@ with open(level_file_name, "r") as f:
     level_data = json.load(f)
 d["level"] = level
 d["name"] = level_data["name"]
+d["qrcode"] = generate_qr_svg(level_data["playlist"])
 del level_data["name"]
+del level_data["playlist"]
 d["colors"] = level_data
 
 # Add static text elements
@@ -51,6 +72,8 @@ d["combo_completion"] = new_element("suoritettu", "combo_start")
 d["title_circle"] = new_element(d["level"], "title_circle")
 d["title_banner"] = new_element(d["name"], "title_banner")
 d["name_line"] = new_element("hyppijän nimi", "name_line")
+d["playlist"] = new_element("mallivideot", "playlist")
+d["website"] = new_element("ropeskipping.fi", "website")
 
 beat_labels = []
 for i in range(1,Combo.chunk_size+1):
@@ -60,22 +83,6 @@ d["table_header"] = [
     new_element("liike", "table_header"),
     new_element("suoritusvaatimus", "table_header")
 ]
-
-def split_by_underscore(s):
-    # Define the regular expression pattern
-    pattern = r"(_[^\W]+|[^_]+)"
-
-    # Find all matches
-    matches = re.findall(pattern, s)
-
-    # Create a list of booleans indicating if the match starts with an underscore
-    has_underscore = [match.startswith('_') for match in matches]
-
-    # Remove the underscore from the matches where it exists
-    cleaned_matches = [match[1:] if match.startswith('_') else match for match in matches]
-
-    return cleaned_matches, has_underscore
-
 
 def read_combos(file_path):
     # Read the TSV file into a DataFrame
@@ -143,13 +150,19 @@ for i, row in csv.iterrows():
         tick_boxes.append(box)
         g[-1]["max_points"] += int(tick)
 
-    liike = new_element(row["liike"], "table_row")
+    parts = row["liike"].split("|")
+    liike = new_element(parts[0].strip(), "table_row")
     vaatimus = new_element(row["suoritusvaatimus"], "table_row")
+    if len(parts) > 1:
+        alias = new_element(f"(" + parts[1].strip() + ")", "skill_alias")
+    else:
+        alias = new_element("", "skill_alias")
 
     skills.append({
         "liike": liike,
         "suoritusvaatimus": vaatimus,
         "tick_boxes": tick_boxes,
+        "alias": alias,
     })
 
 skill_groups = []
@@ -173,6 +186,11 @@ for group in g:
 d["skills"] = skills
 d["skill_groups"] = skill_groups
 
+# Save the data array passed to jinja as json for debugging purposes
+del(d["logo"])
+with open("output/d.json", "w") as json_file:
+    json.dump(d, json_file, indent=4, sort_keys=False)
+
 # Load the SVG template
 skills_template = env.get_template("templates/skills.svg.jinja")
 combos_template = env.get_template("templates/combos.svg.jinja")
@@ -187,8 +205,3 @@ for i, svg in enumerate([skills_svg, combos_svg]):
     with open(filename, "w") as f:
         f.write(svg)
         print(f"Successfully generated {filename}")
-
-# Save the data array passed to jinja as json for debugging purposes
-del(d["logo"])
-with open("output/d.json", "w") as json_file:
-    json.dump(d, json_file, indent=4, sort_keys=False)

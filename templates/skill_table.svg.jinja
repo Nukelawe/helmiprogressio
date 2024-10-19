@@ -1,3 +1,4 @@
+{% import "templates/macros.svg.jinja" as macros with context %}
 <defs>
 	<!-- Table walls -->
 	<rect id="table_boundary" rx="{{table_roundness}}" ry="{{table_roundness}}"
@@ -15,8 +16,8 @@
 	<use href="#table_row_background" style="fill: white"/>
 	<g transform="translate(0,
 		{{ (table_row_height + styles.table_header.cap_height) / 2 }})">
-		{{ text_element(table_header[0], x = table_col1) }}
-		{{ text_element(table_header[1], x = table_col2) }}
+		{{ macros.text_element(table_header[0], x = table_col1) }}
+		{{ macros.text_element(table_header[1], x = table_col2) }}
 	</g>
 
 	{% set ns = namespace(y=0, fill_color="white") %}
@@ -32,15 +33,19 @@
 			<!-- Text -->
 			<g transform="translate(0,
 				{{ (table_row_height + styles.table_row.cap_height) / 2 }})">
-				{{ text_element(skill.liike, x=table_col1) }}
-				{{ text_element(skill.suoritusvaatimus, x=table_col2) }}
+				{{ macros.text_element(skill.liike, x=table_col1) }}
+				{{ macros.text_element(skill.suoritusvaatimus, x=table_col2) }}
+			</g>
+			<g transform="translate(0,
+				{{ (table_row_height + styles.skill_alias.cap_height) / 2 }})">
+				{{ macros.text_element(skill.alias, x=table_col1 + skill.liike.lines[0].x_advance + styles.table_row.x_width) }}
 			</g>
 
 			<!-- Tick boxes -->
 			{% macro place_tick_box(x, e) %}
 				<use id="table_tick_box" href="#tick_box" x="{{ x }}"
 					y="{{ (table_row_height - tick_box_size) / 2 }}"/>
-				{{ text_element(e,
+				{{ macros.text_element(e,
 					x = x + (tick_box_size - e.width) / 2 - e.x_bearing,
 					y = (table_row_height + e.height) / 2) }}
 			{% endmacro %}
@@ -65,7 +70,7 @@
 		{% set x = table_width %}
 		{% set y = group.size / 2 * table_row_height %}
 		<g transform="rotate(90, {{ x }}, {{ y }})">
-			{{ text_element(group.text,
+			{{ macros.text_element(group.text,
 				x = x - group.text.width / 2 , y = y - table_col1) }}
 		</g>
 	</g>

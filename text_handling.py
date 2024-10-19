@@ -25,7 +25,7 @@ def text_filter(text):
     if string == ".": string = ""
     return string.replace("->", "→").replace("*", "×")
 
-def parse_underlined_text(input_string):
+def parse_underscore_text(input_string):
     # Use regular expressions to find all underlined sections and the text outside them
     pattern = r"_\((.*?)\)|([^_]+)"
     matches = re.findall(pattern, input_string)
@@ -88,7 +88,7 @@ def measure_line(line):
         line["width"] += word["width"]
         line["height"] = max(word["height"], line["height"])
         line["x_advance"] += word["x_advance"]
-        line["x_advance"] = max(word["y_advance"], line["y_advance"])
+        line["y_advance"] = max(word["y_advance"], line["y_advance"])
 
 def measure_element(elem):
     elem["x_bearing"] = elem["lines"][0]["words"][0]["x_bearing"]
@@ -107,7 +107,7 @@ def new_element(text, style):
     elem = {"lines": [], "style": style}
     for line in lines:
         elem_line = {"words": [], "style": style}
-        words, overlines = parse_underlined_text(line)
+        words, overlines = parse_underscore_text(line)
         for i, word in enumerate(words):
             elem_word = {"text": word, "style": style, "overline": overlines[i]}
             measure_word(elem_word)

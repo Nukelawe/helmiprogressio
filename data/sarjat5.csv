@@ -1,3 +1,9 @@
-1	nimi	1.1	1.2	1.3	1.4	1.5	1.6	1.7	1.8	2.1	2.2	2.3	2.4	2.5	2.6	2.7	2.8	3.1	3.2	3.3	3.4	3.4	3.6	3.7	3.8	4.1	4.2	4.3	4.4	4.5	4.6	4.7	4.8	5.1
-1	Joku tuplasarja	.	.	.	.	auki-auki\n tupla	auki-risti\n tupla	risti-auki\n tupla	risti-risti\n tupla	sving-_(auki)\n tupla	_(auki)-_(auki)\n tupla	.	.	loppu																				
-		.																																
+4	nimi	1.1	1.2	1.3	1.4	1.5	1.6	1.7	1.8	2.1	2.2	2.3	2.4	2.5	2.6	2.7	2.8	3.1	3.2	3.3	3.4	3.4	3.6	3.7	3.8	4.1	4.2	4.3	4.4	4.5	4.6	4.7	4.8	5.1
+1	Ristituplat	auki-auki\n tupla	risti-auki\n tupla	risti-risti\n tupla	auki-risti\n tupla	auki-auki\n tupla	risti-auki\n tupla	risti-risti\n tupla	auki-risti\n tupla	.																								
+		.	risteissä vasen käsi päällä			.	risteissä oikea käsi päällä																											
+1	EB takaperin	_(auki)	_(risti)\n oik. päällä	_(risti)\n vas. päällä	_(sving)\n vas.	_(sving)\n vas.	_(EB)\n vas. käsi\n selän\n takana	_(EB)\n vas. käsi\n selän\n takana	_(auki)	varvas-\n pysäytys\n takaperin																								
+		.	“vaihto risti”		.		.																											
+1	Awesome Annie	kruger\n oik. jalka	sving\n vas.	kruger\n vas. jalka	sving\n oik.	kruger\n oik. jalka	toad\n oik. jalka	kruger\n vas. jalka	toad\n vas. jalka	.																								
+		.				.	“Awesome Annie”		.																									
+1	Erilaisia ristejä	risti	auki	TS/AS	caboose\n aloitus	caboose\n auki	caboose\n risti	caboose\n purku	_(auki)-_(auki)\n tupla	varvas-\n pysäytys\n takaperin																								
+		.	.	valitse toinen	.	.			.																									

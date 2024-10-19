@@ -1,18 +1,18 @@
 kategoria,liike,suoritusvaatimus,tick
-3,vuoroaskel (speed step),30 sekunnissa 50,1
-,auki-auki tupla,10 putkeen,1
-,_(auki)-_(auki) tupla (takaperin),*3,1
-7,auki-risti tupla,*3,2
-,risti-auki tupla,*3,2
-,risti-risti tupla,*3,2
-,kokokäännös tupla (full twist),*3,1 1
+3,speed step | vuoroaskel,30 sekunnissa 50,1
+,"kaksoishyppy | auki-auki tupla, OO",10 putkeen,1
+,"kaksoishyppy takaperin | _(auki)-_(auki) tupla, _(O)_(O)",*3,1
+5,auki-risti tupla | OC,*3,2
+,risti-auki tupla | CO,*3,2
+,risti-risti tupla | CC,*3,2
+,kokokäännös tupla | full twist,*3,1 1
 9,TS,*3,1 1
 ,AS,*3,1 1
-,_(EB) (takaperin),*3,1 1
-,awesome annie,*3,1 1
+,EB takaperin | _(EB),*3,1 1
+,Awesome Annie,*3,1 1
 ,inverse toad,*3,1 1
-,_(elefantti) (takaperin),*3,1 1
-6,käärmeirrotus,*3,1 1
-,peppuhyppy,*3,1 1
+,elefantti takaperin | _(elefantti),*3,1 1
+6,käärmeirrotus | snake release,*3,1 1
+,peppuhyppy | body bounce,*3,1 1
 ,risti-risti floater,*3,1 1
 ,_(EB-sving) -> _(EB-sving) (takaperin),6 putkeen,2

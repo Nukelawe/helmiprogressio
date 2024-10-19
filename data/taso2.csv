@@ -1,18 +1,18 @@
 kategoria,liike,suoritusvaatimus,tick
-6,perushyppy takaperin välihypyllä,20 putkeen,1
-,perushyppy takaperin ilman välihyppyä,20 putkeen,1
+6,"perushyppy takaperin välihypyllä | _(auki), _(O)",20 putkeen,1
+,"perushyppy takaperin ilman välihyppyä | _(auki), _(O)",20 putkeen,1
 ,yhdellä jalalla takaperin ilman välihyppyä,8 putkeen,1 1
-14,hiihtohyppy,*4,1 1
-,saksihyppy,8 putkeen,2
-,ankka,8 putkeen,2
+12,hiihtohyppy / saksihyppy | front straddle,4 putkeen,2
+,ankka | wounded duck,4 putkeen,2
 ,potku eteen,*4,1 1
 ,potku taakse,*4,1 1
-,haara -> jalkaristi -> haara,*4,1 1
-,boxer step,16 hyppyä,2
-12,sving -> sving,*3,1 1
-,risti,*3,1 1
-,suunnan vaihto taakse,*3,2
-,suunnan vaihto eteen,*3,2
-,puolikäännös taakse,*3,1 1
-,puolikäännös eteen,*3,1 1
-1,valepunnerrus,*3,1
+,haara -> jalkaristi -> haara | X-motion,*3,1 1
+,boxer step,20 putkeen,2
+6,"risti | criss-cross, cross, C",*3,1 1
+,sving -> sving,*3,1 1
+,sving -> risti,*3,1 1
+6,suunnan vaihto edestä taakse,*3,1
+,suunnan vaihto takaa eteen,*3,1
+,puolikäännös edestä taakse | 180 edestä taakse,*3,1 1
+,puolikäännös takaa eteen | 180 takaa eteen,*3,1 1
+1,valepunnerrus | fake push up,*3,1

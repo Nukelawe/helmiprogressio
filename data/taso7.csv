@@ -1,19 +1,19 @@
 kategoria,liike,suoritusvaatimus,tick
-2,vuoroaskel (speed step),30 sekunnissa 60,1
-,kolmoishyppy,*3,1
-6,sving-toad-auki tripla (TJ),*3,2 2
+2,speed step | vuoroaskel,30 sekunnissa 60,1
+,"kolmoishyppy | auki-auki-auki tripla, OOO",*3,1
+6,sving-toad-auki tripla | TJ,*3,2 2
 ,EB-auki tupla,*3,1 1
 ,EB-EB tupla,*3,1 1
-,auki-AS/CL/TS tupla,*3,2
+,auki-TS/CL/AS tupla,*3,2
 ,muu monikertahyppy (IJRU taso 3+),*3,1
-1,vaihto TS/CL/AS,*3,1
-4,_(TS) (takaperin),*3,1 1
-,_(AS) (takaperin),*3,1 1
-,_(CL) (takaperin),*3,1 1
-1,inverse kruger,*3,1 1
-2,aasinpotku (frog),*3,1
-,muu peppuhyppy,*3,1
-,mic irrotus,*3,1 1
-4,muu floater,*3,1
-,kruger-wrap,*3,1 1
+2,vaihto TS,*3,1 1
+,vaihto CL,*3,1 1
+,vaihto AS,*3,1 1
+4,TS takaperin | _(TS),*3,1 1
+,AS takaperin | _(AS),*3,1 1
+,CL takaperin | _(CL),*3,1 1
+4,inverse crouger,*3,1 1
+,crouger-wrap,*3,1 1
 ,toad-wrap,*3,1 1
+1,aasinpotku | frog,*3,1
+,mic irrotus,*3,1 1

@@ -14,96 +14,49 @@
 				@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
  			]]>
 		</style>
-		<rect id="tick_box"
-			rx="{{ tick_box_roundness }}"
-			ry="{{ tick_box_roundness }}"
-			width="{{ tick_box_size }}"
-			height="{{ tick_box_size }}"
-			fill="white"
-			stroke-width="{{ tick_box_border_thickness }}"
-			stroke="{{ colors.border }}"
-		/>
+		{% include "templates/defs.svg.jinja" %}
     </defs>
 
     <rect id="background" width="{{ width }}" height="{{ height }}" fill="white" />
 
-	{% set text_style_properties = [
-		"font-family",
-		"font-size",
-		"font-weight",
-		"font-style",
-		"fill"] %}
-	{% macro text_element(elem, x=0, y=0, x_align="left", y_align="top") %}
-		{% set fn = namespace(y_advance=0, x_advance=0, elem_height=0) %}
-		{% set elem_height = styles[elem.style].x_height * elem.lines|length %}
-		{% if elem.lines|length > 1 %}
-			{% set elem_height = styles[elem.style].x_height * elem.lines|length
-				+ styles[elem.style].line_spacing * (elem.lines|length - 1) %}
-		{% endif %}
-
-		{% if y_align == "middle" %}
-			{% set y = y - elem_height / 2 + styles[elem.style].x_height %}
-		{% elif y_align == "bottom" %}
-			{% set y = y - elem_height + styles[elem.style].x_height %}
-		{% endif %}
-		{% for line in elem.lines %}
-			{% set fn.x_advance = 0 %}
-			{% set x_line = x %}
-			{% if x_align == "center" %}
-				{% set x_line = x - line.width / 2 %}
-			{% elif x_align == "right" %}
-				{% set x_line = x - line.width %}
-			{% endif %}
-			{% for word in line.words %}
-				{% if word.text is not equalto("") %}
-					<text x="{{ x_line + fn.x_advance }}" y="{{ y + fn.y_advance }}"
-						{% for p in text_style_properties %}
-							{{ p }}="{{ styles[word.style][p] }}"
-						{% endfor %}
-						xml:space="preserve">{{ word.text }}
-					</text>
-				{% endif %}
-				{% if word.overline %}
-					{% set overline_thickness = styles[word.style]["font-size"] * 0.1 %}
-					{% set y_overline = fn.y_advance - styles[word.style].cap_height - overline_thickness %}
-					<line x1="{{ x_line + fn.x_advance }}" x2="{{ x_line + fn.x_advance + word.width }}"
-						y1="{{ y + y_overline }}"
-						y2="{{ y + y_overline }}"
-						stroke="black"
-						stroke-width="{{ overline_thickness }}"
-						stroke-linecap="round"/>
-				{% endif %}
-				{% set fn.x_advance = fn.x_advance + word.x_advance %}
-			{% endfor %}
-			{% set fn.y_advance = fn.y_advance + styles[elem.style].x_height + styles[elem.style].line_spacing %}
-		{% endfor %}
-	{% endmacro %}
-
     <g id="body" transform="translate({{ margin_left }}, {{ margin_top }})">
 		{% block title %}{% endblock %}
 		{% block body %}{% endblock %}
-    </g>
+		{% block footer %}
+			{% set logo_aspect_ratio = 4.2199063641816785 %}
+			{% set logo_width = logo_height * logo_aspect_ratio %}
 
-	{% block logo %}
-		{% set logo_aspect_ratio = 4.2199063641816785 %}
-		{% set logo_width = logo_height * logo_aspect_ratio %}
+			<g transform="translate(0,{{ body_height }})">
+				{% set logo_y = -logo_height %}
+				{% set logo_x = (body_width - logo_width) / 2 %}
+				<image href="data:image/svg+xml;base64,{{ logo }}"
+					x="{{ logo_x }}"
+					y="{{ logo_y }}"
+					width="{{ logo_width }}"
+					height="{{ logo_height }}"/>
 
-		{% set logo_y = height - margin_bottom * 2 %}
-		<image href="data:image/svg+xml;base64,{{ logo }}"
-			x="{{ (width - logo_width) / 2 }}"
-			y="{{ height - margin_bottom - logo_height }}"
-			width="{{ logo_width }}"
-			height="{{ logo_height }}"/>
+				{{ macros.text_element(website,
+					x = body_width, y = - styles[website.style].x_height, y_align="middle", x_align="right") }}
 
-		<g style="display: none">
-			<rect id="logo_bounding_box" fill="none" stroke="black" stroke-width="0.2"
-				x="{{ (width - logo_width) / 2 }}" y="{{ height - margin_bottom - logo_height }}"
-				width="{{ logo_width }}"
-				height="{{ logo_height }}"/>
-			<rect id="margins" fill="none" stroke="black" stroke-width="0.2"
-				x="{{ margin_left }}" y="{{ margin_top }}"
+				{% set qr_y = - qr_size %}
+				{% set qr_x = 0 %}
+				<image href="data:image/svg+xml;base64,{{ qrcode }}"
+					x="{{ qr_x }}"
+					y="{{ qr_y }}"
+					width="{{ qr_size }}"
+					height="{{ qr_size }}"/>
+				{{ macros.text_element(playlist,
+					x = qr_x + (qr_size - playlist.width) / 2 , y = qr_y + qr_size + styles[playlist.style].real_height) }}
+
+				<rect style="display:none" id="logo_bounding_box" fill="none" stroke="black" stroke-width="0.2"
+					x="{{ logo_x }}" y="{{ logo_y }}"
+					width="{{ logo_width }}"
+					height="{{ logo_height }}"/>
+			</g>
+			<rect style="display:none" id="margins" fill="none" stroke="black" stroke-width="0.2"
+				x="0" y="0"
 				width="{{ width - margin_left - margin_right }}"
 				height="{{ height - margin_top - margin_bottom }}"/>
-		</g>
-	{% endblock %}
+		{% endblock %}
+    </g>
 </svg>

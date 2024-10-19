@@ -1,0 +1,23 @@
+{% import "templates/macros.svg.jinja" as macros with context %}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+{% set gap = (styles.title_banner.height - styles.title_banner.cap_height) / 2 %}
+{% set title_height = title_circle_radius * 2 %}
+{% set title_width = title_circle_radius * 2 + gap * 4 + title_banner.width %}
+<svg width="{{ title_width }}mm"
+	height="{{ title_height }}mm"
+	viewBox="0 0 {{ title_width }} {{ title_height }}"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	version="2.0">
+	<defs>
+        <style type="text/css">
+			<![CDATA[
+				@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+ 			]]>
+		</style>
+    </defs>
+
+	{% include "templates/title.svg.jinja" %}
+</svg>
+

@@ -1,106 +1,42 @@
 {% extends "templates/base.svg.jinja" %}
+{% import "templates/macros.svg.jinja" as macros with context %}
 {% block body %}
 
 {% set combo_box_width = (body_width - combo_start_width - combo_stop_width) / 8 %}
 
-{% macro combo_box_background(length, x=0, y=0) %}
-	<polygon fill="{{ colors.bg2 }}" points="
-		{{ x }},{{ y }}
-		{{ x + combo_box_width * length }},{{ y }}
-		{{ x + combo_box_width * length + combo_box_tip }},{{ y + combo_row_height / 2 }}
-		{{ x + combo_box_width * length }},{{ y + combo_row_height }}
-		{{ x }},{{ y + combo_row_height }}
-		{{ x + combo_box_tip }},{{ y + combo_row_height / 2 }}"/>
-{% endmacro %}
-
-<defs>
-	<polyline id="combo_start_borders" points="
-		{{ combo_start_width }},{{ combo_row_height }}
-		0,{{ combo_row_height }}
-		0,0
-		{{ combo_start_width }},0"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		stroke="{{ colors.border }}"
-		stroke-width="{{ combo_border_thickness }}"
-		fill="none"/>
-
-	<polyline id="combo_stop_borders" points="
-		0,0
-		{{ combo_stop_width }},0
-		{{ combo_stop_width }},{{ combo_row_height }}
-		0,{{ combo_row_height }}"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		stroke="{{ colors.border }}"
-		stroke-width="{{ combo_border_thickness }}"
-		fill="none"/>
-
-	<g id="combo_start_background">
-		<polygon fill="{{ colors.bg1 }}" points="
-			0,0
-			{{ combo_start_width }},0
-			{{ combo_start_width + combo_box_tip }},{{ combo_row_height / 2 }}
-			{{ combo_start_width }},{{ combo_row_height }}
-			0,{{ combo_row_height }}"/>
-		<g transform="rotate(-90)">
-			{{ text_element(combo_start,
-				x = - (combo_start.width + combo_row_height) / 2,
-				y = (combo_start.height + combo_start_width) / 2) }}
-		</g>
-	</g>
-
-	<g id="combo_stop_background">
-		<polygon fill="{{ colors.bg1 }}" points="
-			0,0
-			{{ combo_stop_width }},0
-			{{ combo_stop_width }},{{ combo_row_height }}
-			0,{{ combo_row_height }}
-			{{ combo_box_tip }},{{ combo_row_height / 2 }}"/>
-	</g>
-
-	<g id="delimiter">
-		<polyline points="{{ combo_box_tip }},{{ combo_row_height / 2 }} 0,0"
-			stroke="{{ colors.hl }}"
-			stroke-dasharray="1 1"
-			stroke-linecap="round"
-			stroke-width="{{ combo_border_thickness / 2 }}"/>
-		<polyline points="{{ combo_box_tip }},{{ combo_row_height / 2 }} 0,{{ combo_row_height }}"
-			stroke="{{ colors.hl }}"
-			stroke-dasharray="1 1"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="{{ combo_border_thickness / 2 }}"/>
-	</g>
-
-	<ellipse id="beat_label_background"
-		cx="0" cy="0"
-		rx="{{ combo_beat_radius_x }}"
-		ry="{{ combo_beat_radius_y }}"
-		fill="{{ colors.border }}"
-		clip-path="url(#beat_label_clip)"/>
-	<clipPath id="beat_label_clip">
-		<rect id="test" x="{{ - combo_beat_radius_x }}"
-			y="{{ - combo_border_thickness / 2 }}"
-			width="{{ combo_box_width }}"
-			height="{{ combo_beat_radius_y * 2 }}"/>
-	</clipPath>
-</defs>
-
-{% set ns = namespace(x=0, y=0, length=0) %}
+{% set ns = namespace(y=0) %}
 {% for combo in combos %}
-	{% include "templates/combo.svg.jinja" %}
+	{% set combo_height = combo.layer_0|length * (combo_row_height + combo_row_gap) + combo_gap %}
+
+	{# title #}
+	{{ macros.text_element(combo.title, y = ns.y) }}
+
+	{# tick box #}
+	{% set x_tick_box = width - margin_right - margin_left - tick_box_size %}
+	{% set y_tick_box = ns.y + combo_height - combo_gap + combo_row_gap %}
+	<use href="#tick_box" x="{{ x_tick_box }}" y="{{ y_tick_box }}"/>
+	{% if draw_combo_tick_values %}
+		{{ macros.text_element(combo.tick,
+			x = x_tick_box + (tick_box_size - combo.tick.width) / 2 - combo.tick.x_bearing,
+			y = y_tick_box + (tick_box_size + combo.tick.height) / 2) }}
+	{% endif %}
+
+	{# combo itself #}
+	<g transform="translate(0,{{ ns.y + combo_row_gap }})">
+		{% set ns.y = ns.y + combo_height %}
+		{% include "templates/combo.svg.jinja" %}
+	</g>
 {% endfor %}
 
 {% if draw_combo_tick_values %}
-	{{ text_element(combo_value,
+	{{ macros.text_element(combo_value,
 		x = width - margin_right - margin_left - combo_value.width,
 		y = ns.y + combo_gap / 2) }}
-	{{ text_element(combo_requirements,
+	{{ macros.text_element(combo_requirements,
 		x = width - margin_right - margin_left - combo_requirements.width
 			- combo_value.width - styles[combo_requirements.style].x_width,
 		y = ns.y + combo_gap / 2) }}
 {% endif %}
 
 {% endblock %}
-{% block logo %}{% endblock %}
+{% block footer %}{% endblock %}

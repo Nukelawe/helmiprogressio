@@ -1,16 +1,16 @@
 kategoria,liike,suoritusvaatimus,tick
-1,vuoroaskel (speed step),30 sekunnissa 40,1
+1,speed step | vuoroaskel,30 sekunnissa 40,1
 2,can-can,*4,1 1
-6,sving-auki tupla,*3,1 1
-,sving-risti tupla,*3,1 1
-,puolikäännös taakse tupla,*3,1 1
-12,vaihtoristi,*3,1 1
-,vale-EB,*3,1 1
+6,sving-auki tupla | SO,*3,1 1
+,sving-risti tupla | SC,*3,1 1
+,"puolikäännös taakse tupla | S_(O), sving-_(auki) tupla",*3,1 1
+12,vaihto risti | cross-cross,*3,1 1
+,vale-EB | fake EB,*3,1 1
 ,EB,*3,1 1
-,toad,*3,1 1
-,kruger -> sving,*3,1 1
-,kruger -> risti,*3,1 1
-6,vale aasinpotku,*3,2
+,toad | leg over cross,*3,1 1
+,crouger -> sving | leg over -> swing,*3,1 1
+,crouger -> risti | leg over -> cross,*3,1 1
+6,vale aasinpotku | fake frog,*3,2
 ,kalastus,*3,1 1
 ,sving-sving floater,*3,1 1
 ,EB-wrap,*3,1 1
