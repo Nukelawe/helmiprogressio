@@ -14,6 +14,9 @@ output/helmiprogressio.pdf: set_metadata.sh output/front_page.pdf $(pdfs) | outp
 	pdfunite output/front_page.pdf $(pdfs) output/helmiprogressio_nometa.pdf
 	./$<
 
+output/helmiprogressio_nocover.pdf: set_metadata.sh output/front_page.pdf $(pdfs) | output
+	pdfunite $(pdfs) output/helmiprogressio_nocover.pdf
+
 # front page
 output/front_page.pdf: front_page/front_page.tex $(front_page_diagrams)
 	xelatex --output-directory output $<

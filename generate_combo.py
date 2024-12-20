@@ -10,7 +10,7 @@ if len(sys.argv) != 2:
     print("No combo file given.")
     sys.exit(1)
 
-color_scheme = 3
+color_scheme = 5
 
 # Input-files
 combo_file_name = sys.argv[1]
