@@ -23,20 +23,20 @@
 		{% block title %}{% endblock %}
 		{% block body %}{% endblock %}
 		{% block footer %}
-			{% set logo_aspect_ratio = 4.2199063641816785 %}
-			{% set logo_width = logo_height * logo_aspect_ratio %}
-
 			<g transform="translate(0,{{ body_height }})">
-				{% set logo_y = -logo_height %}
-				{% set logo_x = (body_width - logo_width) / 2 %}
-				<image href="data:image/svg+xml;base64,{{ logo }}"
+				{% set logo_width = qr_size * 1.3 %}
+				{% set logo_height = qr_size * 1.3 %}
+				{% set logo_y = -0.8*logo_height %}
+				{% set logo_x = body_width - logo_width %}
+				<image href="data:image/png;base64,{{ logo }}"
 					x="{{ logo_x }}"
 					y="{{ logo_y }}"
 					width="{{ logo_width }}"
 					height="{{ logo_height }}"/>
-
-				{{ macros.text_element(website,
-					x = body_width, y = - styles[website.style].x_height, y_align="middle", x_align="right") }}
+				<rect style="display:none" id="logo_bounding_box" fill="none" stroke="black" stroke-width="0.2"
+					x="{{ logo_x }}" y="{{ logo_y }}"
+					width="{{ logo_width }}"
+					height="{{ logo_height }}"/>
 
 				{% set qr_y = - qr_size %}
 				{% set qr_x = 0 %}
@@ -47,11 +47,6 @@
 					height="{{ qr_size }}"/>
 				{{ macros.text_element(playlist,
 					x = qr_x + (qr_size - playlist.width) / 2 , y = qr_y + qr_size + styles[playlist.style].real_height) }}
-
-				<rect style="display:none" id="logo_bounding_box" fill="none" stroke="black" stroke-width="0.2"
-					x="{{ logo_x }}" y="{{ logo_y }}"
-					width="{{ logo_width }}"
-					height="{{ logo_height }}"/>
 			</g>
 			<rect style="display:none" id="margins" fill="none" stroke="black" stroke-width="0.2"
 				x="0" y="0"

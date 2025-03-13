@@ -10,12 +10,12 @@ front_page_diagrams = front_page/skill_table_example.pdf front_page/tickbox_empt
 	front_page/tickbox_2.pdf front_page/kategoriapisteet.pdf front_page/kategoriaesimerkki.pdf front_page/titles.pdf
 
 # Default target
-output/helmiprogressio.pdf: set_metadata.sh output/front_page.pdf $(pdfs) | output
-	pdfunite output/front_page.pdf $(pdfs) output/helmiprogressio_nometa.pdf
+output/tasopassit.pdf: set_metadata.sh output/front_page.pdf $(pdfs) | output
+	pdfunite output/front_page.pdf $(pdfs) output/tasopassit_nometa.pdf
 	./$<
 
-output/helmiprogressio_nocover.pdf: set_metadata.sh output/front_page.pdf $(pdfs) | output
-	pdfunite $(pdfs) output/helmiprogressio_nocover.pdf
+output/tasopassit_nocover.pdf: set_metadata.sh output/front_page.pdf $(pdfs) | output
+	pdfunite $(pdfs) output/tasopassit_nocover.pdf
 
 # front page
 output/front_page.pdf: front_page/front_page.tex $(front_page_diagrams)

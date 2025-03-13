@@ -35,7 +35,7 @@ def generate_qr_svg(data):
 # Input-files
 style_file_name = "config/style.json"
 level_file_name = f"config/level{level}.json"
-logo_file_name = "static/logo.b64.svg"
+logo_file_name = "static/logo-long.b64.png"
 skills_file_name = f"data/taso{level}.csv"
 combos_file_name = f"data/sarjat{level}.csv"
 
@@ -187,7 +187,7 @@ d["skills"] = skills
 d["skill_groups"] = skill_groups
 
 # Save the data array passed to jinja as json for debugging purposes
-del(d["logo"])
+#del(d["logo"])
 with open("output/d.json", "w") as json_file:
     json.dump(d, json_file, indent=4, sort_keys=False)
 
