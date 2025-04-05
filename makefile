@@ -1,6 +1,7 @@
 NUMBERS   = 1 2 3 4 5 6 7
 CSV_FILES = $(addsuffix .csv,$(addprefix data/taso,$(NUMBERS)))
 svgs      = $(addsuffix .svg,$(addprefix output/taso,$(NUMBERS)))
+images    = $(addsuffix .png,$(addprefix output/taso,$(NUMBERS)))
 titles    = $(addsuffix .png,$(addprefix output/title,$(NUMBERS)))
 pdfs      = $(svgs:.svg=.pdf)
 templates = templates/base.svg.jinja templates/skill_table.svg.jinja templates/skills.svg.jinja \
@@ -36,6 +37,9 @@ output/taso%-0.pdf: output/taso%-0.svg | output
 output/taso%-1.pdf: output/taso%-1.svg | output
 	cairosvg -f pdf -u -o $@ $<
 
+output/taso%.png: output/taso%-0.svg | output
+	magick -density 300 $< $@
+
 output/taso%.pdf: output/taso%-0.pdf output/taso%-1.pdf | output
 	@pdf_files="$(filter %.pdf,$^)";\
 	pdfunite $$pdf_files $@
@@ -55,6 +59,9 @@ output/title%.png: output/title%.svg
 titles:
 	make $(titles)
 
+images:
+	make $(images)
+
 # Clean target to remove generated files
 clean:
 	rm -f output/*.svg output/*.pdf
@@ -65,5 +72,5 @@ downloads:
 static/logo.b64.svg: static/logo.svg
 	base64 $< > $@
 
-.PHONY: data clean downloads titles
+.PHONY: data clean downloads titles images
 
